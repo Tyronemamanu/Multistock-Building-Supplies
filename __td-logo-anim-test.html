@@ -1,0 +1,315 @@
+<meta charset="utf-8"><style>
+body{margin:0;font-family:system-ui;background:#E9ECF1}
+.hdr{height:88px;background:#fff;display:flex;align-items:center;padding:0 40px}
+.ftr{background:#A81A1A;padding:40px;display:flex}
+.logo{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#111;
+  padding:8px 14px;border-radius:999px;transition:background 220ms,transform 120ms}
+.logo:hover{background:#F1F3F7}
+.logo:active{transform:scale(.98)}
+.ftr .logo{background:#fff}
+.logo-text{font-weight:600}
+/* ============================================================
+   SLIPSTREAM — Tyrone Digital logo motion
+   Paste into css/styles.css, REPLACING the existing
+   .logo-anim / .logo-img / .logo-glint / .logo-streaks rules.
+   Image URLs are relative to css/  ->  ../images/
+   ============================================================ */
+
+/* ---------- 1. Stage ---------- */
+
+.logo .logo-anim{
+  position: relative;
+  display: inline-block;
+  height: 46px;
+  aspect-ratio: 900 / 563;      /* 73.5px wide at 46px tall */
+  flex: 0 0 auto;
+  isolation: isolate;           /* confines the glint's blend to the mark */
+  --td-c-core: rgba(232,114,44,.95);
+  --td-c-hot:  rgba(255,171,101,1);
+  --td-c-deep: rgba(220,38,38,.78);
+}
+
+.logo .logo-img{
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform-origin: 50% 50%;
+  transition: transform 420ms cubic-bezier(.2,.8,.2,1);
+  animation: td-mark-set 760ms cubic-bezier(.22,.72,.16,1) 80ms backwards;
+  will-change: transform;
+}
+
+@keyframes td-mark-set{
+  0%   { transform: translate3d(-11px,0,0) scale(.972); opacity: 0; }
+  38%  { opacity: 1; }
+  100% { transform: translate3d(0,0,0) scale(1);        opacity: 1; }
+}
+
+
+/* ---------- 2. The slipstream field (the star) ---------- */
+
+.logo .logo-streaks{
+  position: absolute;
+  top: 0;
+  right: 100%;
+  margin-right: -14px;          /* overlaps the artwork's own 5 lines */
+  width: 46px;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  opacity: .26;                 /* idle whisper */
+  transition: opacity 260ms cubic-bezier(.3,.7,.2,1);
+  animation: td-field-ignite 1400ms cubic-bezier(.2,.72,.18,1) 40ms backwards;
+
+  /* hard-bounds the effect: streaks dissolve before the field's left edge */
+  -webkit-mask-image: linear-gradient(90deg,
+      rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 16%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
+          mask-image: linear-gradient(90deg,
+      rgba(0,0,0,0) 0%, rgba(0,0,0,.55) 16%, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 100%);
+}
+
+@keyframes td-field-ignite{
+  0%   { opacity: 0;   }
+  12%  { opacity: 1;   }
+  46%  { opacity: .72; }
+  100% { opacity: .26; }        /* lands exactly on the CSS idle value */
+}
+
+.logo .logo-streaks i{
+  position: absolute;
+  right: 0;
+  top: var(--y);
+  width: var(--w);
+  height: var(--h);
+  border-radius: 2px;
+  transform-origin: 100% 50%;
+  background-image: linear-gradient(90deg,
+      rgba(232,114,44,0) 0%,
+      var(--c1) 30%,
+      var(--c2) 86%,
+      rgba(255,255,255,0) 100%);
+  transform: translate3d(var(--x0),0,0) scaleX(.28);
+  opacity: 0;
+  will-change: transform, opacity;
+  animation: td-slipstream 3400ms var(--d) infinite both;
+}
+
+/* per-line score — deliberately non-linear stagger, italic rake on --x0 */
+.logo .logo-streaks i:nth-child(1){
+  --y:24%; --w:20px; --h:1px;   --x0:-1px; --x:-19px; --o:.30; --d:0ms;
+  --c1: var(--td-c-deep); --c2: var(--td-c-core); filter: blur(.35px);
+}
+.logo .logo-streaks i:nth-child(2){
+  --y:35%; --w:34px; --h:2px;   --x0:2px;  --x:-24px; --o:.50; --d:70ms;
+  --c1: var(--td-c-core); --c2: var(--td-c-hot);
+}
+.logo .logo-streaks i:nth-child(3){
+  --y:43%; --w:27px; --h:1.5px; --x0:4px;  --x:-21px; --o:.42; --d:40ms;
+  --c1: var(--td-c-core); --c2: var(--td-c-hot);
+}
+.logo .logo-streaks i:nth-child(4){
+  --y:52%; --w:40px; --h:2px;   --x0:6px;  --x:-27px; --o:.58; --d:130ms;
+  --c1: var(--td-c-core); --c2: var(--td-c-hot);
+}
+.logo .logo-streaks i:nth-child(5){
+  --y:63%; --w:24px; --h:1.5px; --x0:7px;  --x:-20px; --o:.38; --d:95ms;
+  --c1: var(--td-c-core); --c2: var(--td-c-hot);
+}
+.logo .logo-streaks i:nth-child(6){
+  --y:76%; --w:16px; --h:1px;   --x0:5px;  --x:-16px; --o:.26; --d:190ms;
+  --c1: var(--td-c-deep); --c2: var(--td-c-core); filter: blur(.4px);
+}
+
+/* 620ms of motion inside a 3400ms cycle = 18.2% action, 81.8% stillness */
+@keyframes td-slipstream{
+  0%{
+    transform: translate3d(var(--x0),0,0) scaleX(.28);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(.4,0,.6,1);
+  }
+  1.5%{                                     /* 51ms — the emission pop */
+    opacity: var(--o);
+    animation-timing-function: cubic-bezier(.16,.72,.24,1);
+  }
+  6.5%{                                     /* 221ms — peak velocity, tail stretched */
+    transform: translate3d(calc(var(--x0) + (var(--x) - var(--x0)) * .55),0,0) scaleX(1.22);
+    animation-timing-function: cubic-bezier(.22,.61,.16,1);
+  }
+  9.5%{
+    opacity: var(--o);
+  }
+  18.2%{                                    /* 619ms — dissipated */
+    transform: translate3d(var(--x),0,0) scaleX(.52);
+    opacity: 0;
+  }
+  100%{
+    transform: translate3d(var(--x),0,0) scaleX(.52);
+    opacity: 0;
+  }
+}
+
+
+/* ---------- 3. Specular shear across the letterforms ---------- */
+
+.logo .logo-glint{
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  mix-blend-mode: overlay;
+  -webkit-mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTYzIj48ZyBmaWxsPSIjRTg3MjJDIj48cmVjdCB4PSIxMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSI0MCIgeT0iMjUwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSIwIiB5PSIzMDAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjU1IiB5PSIzNTAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjI1IiB5PSI0MDAiIHdpZHRoPSIxODUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjx0ZXh0IHg9IjI1MCIgeT0iNDIwIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMzMCI+VEQ8L3RleHQ+PC9nPjwvc3ZnPg==");
+          mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTYzIj48ZyBmaWxsPSIjRTg3MjJDIj48cmVjdCB4PSIxMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSI0MCIgeT0iMjUwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSIwIiB5PSIzMDAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjU1IiB5PSIzNTAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjI1IiB5PSI0MDAiIHdpZHRoPSIxODUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjx0ZXh0IHg9IjI1MCIgeT0iNDIwIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMzMCI+VEQ8L3RleHQ+PC9nPjwvc3ZnPg==");
+  -webkit-mask-size: contain;      mask-size: contain;
+  -webkit-mask-position: center;   mask-position: center;
+  -webkit-mask-repeat: no-repeat;  mask-repeat: no-repeat;
+}
+
+.logo .logo-glint::before,
+.logo .logo-glint::after{
+  content: "";
+  position: absolute;
+  top: -25%;
+  bottom: -25%;
+  left: 0;
+  width: 42%;
+  background-image: linear-gradient(104deg,
+      rgba(255,255,255,0)   14%,
+      rgba(255,255,255,.34) 42%,
+      rgba(255,255,255,.95) 50%,
+      rgba(255,255,255,.34) 58%,
+      rgba(255,255,255,0)   86%);
+  transform: translate3d(-170%,0,0);
+  opacity: 0;
+  will-change: transform, opacity;
+}
+
+/* ambient pass: 900ms of sweep inside an 8500ms cycle = 10.6% */
+.logo .logo-glint::before{
+  animation: td-shear 8500ms 2600ms infinite both;
+}
+
+@keyframes td-shear{
+  0%    { transform: translate3d(-170%,0,0); opacity: 0;
+          animation-timing-function: cubic-bezier(.42,0,.16,1); }
+  0.6%  { opacity: 1; }
+  9.4%  { opacity: 1; }
+  10.6% { transform: translate3d(320%,0,0); opacity: 0; }
+  100%  { transform: translate3d(320%,0,0); opacity: 0; }
+}
+
+/* hover pass: starts and ends at opacity 0, so mid-flight removal is invisible */
+.logo:hover .logo-glint::after,
+.logo:focus-visible .logo-glint::after{
+  animation: td-shear-hover 760ms cubic-bezier(.36,0,.12,1) both;
+}
+
+@keyframes td-shear-hover{
+  0%   { transform: translate3d(-170%,0,0); opacity: 0; }
+  8%   { opacity: 1; }
+  82%  { opacity: 1; }
+  100% { transform: translate3d(320%,0,0); opacity: 0; }
+}
+
+
+/* ---------- 4. Depth ghosts — transition-driven, so they always reverse ---------- */
+
+.logo .logo-anim::before,
+.logo .logo-anim::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTYzIj48ZyBmaWxsPSIjRTg3MjJDIj48cmVjdCB4PSIxMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSI0MCIgeT0iMjUwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSIwIiB5PSIzMDAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjU1IiB5PSIzNTAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjI1IiB5PSI0MDAiIHdpZHRoPSIxODUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjx0ZXh0IHg9IjI1MCIgeT0iNDIwIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMzMCI+VEQ8L3RleHQ+PC9nPjwvc3ZnPg==");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform-origin: 100% 50%;
+  transform: translate3d(0,0,0) scaleX(1);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 340ms cubic-bezier(.2,.8,.2,1),
+              transform 480ms cubic-bezier(.16,.84,.24,1);
+}
+.logo .logo-anim::before{ filter: blur(2.4px); }
+.logo .logo-anim::after { filter: blur(6px);   }
+
+.logo:hover .logo-anim::before,
+.logo:focus-visible .logo-anim::before{
+  opacity: .16;
+  transform: translate3d(-7px,0,0) scaleX(1.04);
+}
+.logo:hover .logo-anim::after,
+.logo:focus-visible .logo-anim::after{
+  opacity: .07;
+  transform: translate3d(-15px,0,0) scaleX(1.10);
+}
+
+
+/* ---------- 5. Hover / press on the mark (pill button untouched) ---------- */
+
+.logo:hover .logo-streaks,
+.logo:focus-visible .logo-streaks{ opacity: .92; }
+
+.logo:hover .logo-img,
+.logo:focus-visible .logo-img{ transform: translate3d(2px,0,0); }
+
+.logo:active .logo-img{
+  transform: translate3d(1px,0,0) scale(.985);
+  transition-duration: 90ms;
+}
+
+
+/* ---------- 6. Footer safety: streaks that overhang the white pill onto #A81A1A ---------- */
+
+.site-footer .logo .logo-streaks i:nth-child(1),
+.site-footer .logo .logo-streaks i:nth-child(6),
+footer .logo .logo-streaks i:nth-child(1),
+footer .logo .logo-streaks i:nth-child(6){
+  --c1: rgba(255,232,220,.55);
+  --c2: rgba(255,255,255,.92);
+}
+.site-footer .logo .logo-streaks,
+footer .logo .logo-streaks{ opacity: .34; }
+.site-footer .logo:hover .logo-streaks,
+footer .logo:hover .logo-streaks{ opacity: .95; }
+
+
+/* ---------- 7. Reduced motion ---------- */
+
+@media (prefers-reduced-motion: reduce){
+  .logo .logo-img,
+  .logo .logo-streaks,
+  .logo .logo-streaks i,
+  .logo .logo-glint::before,
+  .logo .logo-glint::after{
+    animation: none !important;
+  }
+  .logo .logo-img{ opacity: 1; transform: none; transition: none; }
+  .logo .logo-streaks{ opacity: .22; transition: none; }
+  .logo .logo-streaks i{
+    opacity: calc(var(--o) * .8);
+    transform: translate3d(var(--x0),0,0) scaleX(1);
+  }
+  .logo .logo-glint::before,
+  .logo .logo-glint::after{ opacity: 0; }
+  .logo .logo-anim::before,
+  .logo .logo-anim::after{ transition: none; opacity: 0 !important; }
+  .logo:hover .logo-img,
+  .logo:active .logo-img{ transform: none; }
+}
+
+</style>
+<div class="hdr"><a class="logo" href="#"><span class="logo-anim">
+<img class="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTYzIj48ZyBmaWxsPSIjRTg3MjJDIj48cmVjdCB4PSIxMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSI0MCIgeT0iMjUwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSIwIiB5PSIzMDAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjU1IiB5PSIzNTAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjI1IiB5PSI0MDAiIHdpZHRoPSIxODUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjx0ZXh0IHg9IjI1MCIgeT0iNDIwIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMzMCI+VEQ8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Tyrone Digital">
+<span class="logo-glint" aria-hidden="true"></span>
+<span class="logo-streaks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+</span><span class="logo-text">Tyrone<strong>Digital</strong></span></a></div>
+<div class="ftr"><footer style="width:100%"><a class="logo" href="#"><span class="logo-anim">
+<img class="logo-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTYzIj48ZyBmaWxsPSIjRTg3MjJDIj48cmVjdCB4PSIxMCIgeT0iMjAwIiB3aWR0aD0iMjAwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSI0MCIgeT0iMjUwIiB3aWR0aD0iMTcwIiBoZWlnaHQ9IjI2IiByeD0iMTMiLz48cmVjdCB4PSIwIiB5PSIzMDAiIHdpZHRoPSIyMTAiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjU1IiB5PSIzNTAiIHdpZHRoPSIxNTUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjxyZWN0IHg9IjI1IiB5PSI0MDAiIHdpZHRoPSIxODUiIGhlaWdodD0iMjYiIHJ4PSIxMyIvPjx0ZXh0IHg9IjI1MCIgeT0iNDIwIiBmb250LWZhbWlseT0iR2VvcmdpYSxzZXJpZiIgZm9udC1zdHlsZT0iaXRhbGljIiBmb250LXdlaWdodD0iNzAwIiBmb250LXNpemU9IjMzMCI+VEQ8L3RleHQ+PC9nPjwvc3ZnPg==" alt="Tyrone Digital">
+<span class="logo-glint" aria-hidden="true"></span>
+<span class="logo-streaks" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+</span><span class="logo-text">Tyrone<strong>Digital</strong></span></a></footer></div>
