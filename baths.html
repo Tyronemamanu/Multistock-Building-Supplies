@@ -16,7 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=148">
+<link rel="stylesheet" href="styles.css?v=159">
 </head>
 <body>
 
@@ -71,7 +71,13 @@
   <section class="feature-boxes">
     <h2 class="colours-title">OUR RANGE</h2>
     <div class="colour-grid">
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/bath-freestanding.webp" style="background-image:url('images/bath-freestanding-thumb.webp')"></div><figcaption>Freestanding</figcaption></figure>
+      <figure class="colour-swatch">
+        <div class="colour-img swatch-carousel" data-fulls="images/bath-freestanding.webp,images/bath-berri.webp,images/bath-eli-shell.webp,images/bath-fluted-oval.webp" data-thumbs="images/bath-freestanding-thumb.webp,images/bath-berri.webp,images/bath-eli-shell-thumb.webp,images/bath-fluted-oval-thumb.webp" data-full="images/bath-freestanding.webp" style="background-image:url('images/bath-freestanding-thumb.webp')">
+          <button type="button" class="carousel-arrow carousel-prev" aria-label="Previous image">‹</button>
+          <button type="button" class="carousel-arrow carousel-next" aria-label="Next image">›</button>
+        </div>
+        <figcaption>Freestanding</figcaption>
+      </figure>
       <figure class="colour-swatch"><div class="colour-img" data-full="images/bath-back-to-wall.webp" style="background-image:url('images/bath-back-to-wall-thumb.webp')"></div><figcaption>Back-to-Wall</figcaption></figure>
       <figure class="colour-swatch"><div class="colour-img" data-full="images/bath-corner.webp" style="background-image:url('images/bath-corner-thumb.webp')"></div><figcaption>Corner</figcaption></figure>
     </div>
@@ -192,19 +198,56 @@
   var lightboxClose = document.getElementById('lightbox-close');
   var lightboxPrev = document.getElementById('lightbox-prev');
   var lightboxNext = document.getElementById('lightbox-next');
-  var colourFulls = [].map.call(document.querySelectorAll('.colour-img'), function (el) { return el.dataset.full; }).filter(Boolean);
+  // Images shown in the lightbox when opening a plain (non-carousel) swatch.
+  var regularFulls = [];
+  document.querySelectorAll('.colour-img:not(.swatch-carousel)').forEach(function (el) {
+    if (el.dataset.full) regularFulls.push(el.dataset.full);
+  });
+
+  // The image group the lightbox is currently navigating. Each carousel keeps
+  // its own group so arrows stay within that box and never jump to other boxes.
+  var activeFulls = regularFulls;
   var colourIndex = 0;
+
+  document.querySelectorAll('.swatch-carousel').forEach(function (car) {
+    var fulls = car.dataset.fulls.split(',');
+    var thumbs = car.dataset.thumbs.split(',');
+    var idx = 0;
+    function render() {
+      car.style.backgroundImage = "url('" + thumbs[idx] + "')";
+      car.dataset.full = fulls[idx];
+    }
+    car.querySelector('.carousel-prev').addEventListener('click', function (e) {
+      e.stopPropagation();
+      idx = (idx - 1 + fulls.length) % fulls.length;
+      render();
+    });
+    car.querySelector('.carousel-next').addEventListener('click', function (e) {
+      e.stopPropagation();
+      idx = (idx + 1) % fulls.length;
+      render();
+    });
+    // Opening this carousel in the lightbox restricts nav to its own images.
+    car.addEventListener('click', function () {
+      activeFulls = fulls;
+      colourIndex = idx;
+      lightboxImg.src = fulls[idx];
+      colourLightbox.classList.add('open');
+    });
+  });
+
   function showColour(i) {
-    if (!colourFulls.length) return;
-    colourIndex = (i + colourFulls.length) % colourFulls.length;
-    lightboxImg.src = colourFulls[colourIndex];
+    if (!activeFulls.length) return;
+    colourIndex = (i + activeFulls.length) % activeFulls.length;
+    lightboxImg.src = activeFulls[colourIndex];
   }
   function closeColourLightbox() { colourLightbox.classList.remove('open'); }
-  document.querySelectorAll('.colour-img').forEach(function (swatch) {
+  document.querySelectorAll('.colour-img:not(.swatch-carousel)').forEach(function (swatch) {
     swatch.addEventListener('click', function () {
       var full = swatch.dataset.full;
       if (!full) return;
-      colourIndex = colourFulls.indexOf(full);
+      activeFulls = regularFulls;
+      colourIndex = regularFulls.indexOf(full);
       lightboxImg.src = full;
       colourLightbox.classList.add('open');
     });

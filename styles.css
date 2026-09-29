@@ -696,6 +696,18 @@ h1, h2, h3, h4,
   max-width: 100%;
   object-fit: contain;
 }
+.partners-tagline {
+  margin: 28px auto 0;
+  max-width: 860px;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .partners-tagline { font-size: 1rem; }
+}
 .why-left,
 .why-right,
 .why-third { flex: 1 1 0; min-width: 0; display: flex; }
@@ -839,14 +851,15 @@ h1, h2, h3, h4,
   border-bottom: 2px solid #b3b3b3;
 }
 .suppliers-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 40px 60px;
   max-width: 1100px;
   margin: 0 auto;
 }
+.suppliers-grid .supplier-logo { flex: 0 0 auto; }
 .supplier-logo {
   display: flex;
   align-items: center;
@@ -1162,6 +1175,37 @@ h1, h2, h3, h4,
   justify-content: center;
 }
 .colour-swatch { margin: 0; text-align: center; }
+.swatch-carousel { position: relative; }
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  color: #021282;
+  font-size: 1.5rem;
+  line-height: 1;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px -3px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.2s ease;
+  z-index: 2;
+}
+.swatch-carousel:hover .carousel-arrow,
+.carousel-arrow:focus-visible { opacity: 1; }
+.carousel-arrow:hover { background: #ffffff; }
+.carousel-prev { left: 10px; }
+.carousel-next { right: 10px; }
+@media (max-width: 768px) {
+  .carousel-arrow { opacity: 1; width: 34px; height: 34px; font-size: 1.3rem; }
+}
 .colour-img {
   aspect-ratio: 4 / 3;
   border-radius: 10px;
@@ -2231,4 +2275,19 @@ button.btn { border: none; cursor: pointer; }
   .quote-form-card { padding: 28px 22px; order: 1; }
   .quote-aside { order: 2; }
   .quote-form .form-row { flex-direction: column; gap: 0; }
+}
+
+/* ---- Mobile responsiveness safeguards ---- */
+html, body { overflow-x: hidden; max-width: 100%; }
+img { max-width: 100%; }
+@media (max-width: 768px) {
+  .gallery-banner .page-banner-content { max-width: 100%; box-sizing: border-box; }
+  .gallery-banner .page-banner-content p,
+  .gallery-banner .page-banner-content p.banner-lead { max-width: 100%; }
+  .gallery-banner .page-banner-content ul { max-width: 100%; }
+}
+
+@media (max-width: 768px) {
+  .gallery-banner .page-banner-content { width: 100% !important; max-width: 100% !important; }
+  .gallery-banner .page-banner-content > * { max-width: 100% !important; overflow-wrap: anywhere; }
 }
