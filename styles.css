@@ -1893,6 +1893,13 @@ button.btn { border: none; cursor: pointer; }
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 .footer-bottom strong { color: #fff; font-weight: 700; }
+.footer-credit {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 0.3px;
+}
 .info-icon-svg { height: 26px; width: auto; margin-top: 1px; flex: 0 0 auto; }
 .info-item h4 { font-size: 0.78rem; letter-spacing: 0.5px; margin-bottom: 4px; color: #fff; }
 .info-item p { font-size: 0.78rem; color: rgba(255, 255, 255, 0.8); line-height: 1.6; }
