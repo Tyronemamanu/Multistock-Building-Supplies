@@ -638,6 +638,26 @@
     }
   }
 
+  /* --- Gallery: row-by-row masonry (keeps the photo order left to right) --- */
+  function initRowMasonry() {
+    var grid = $('.masonry.is-rows');
+    if (!grid) return;
+    var items = $$('.masonry-item', grid);
+    function lay() {
+      var gap = parseFloat(getComputedStyle(grid).columnGap) || 24;
+      items.forEach(function (it) {
+        var img = it.querySelector('img'), w = it.getBoundingClientRect().width;
+        var iw = img && (img.naturalWidth || +img.getAttribute('width')), ih = img && (img.naturalHeight || +img.getAttribute('height'));
+        var h = iw ? w * ih / iw : it.getBoundingClientRect().height;
+        it.style.gridRowEnd = 'span ' + Math.max(1, Math.ceil((h + gap) / 8));
+      });
+    }
+    items.forEach(function (it) { var img = it.querySelector('img'); if (img && !img.complete) img.addEventListener('load', lay); });
+    lay();
+    window.addEventListener('resize', lay);
+    window.addEventListener('load', lay);
+  }
+
   /* --- Return to the same spot -------------------------------------------------
      Going Back (the Back button or the browser's back arrow) should land where the
      visitor was, not at the top. The browser's own restore can miss on these pages
@@ -1251,6 +1271,7 @@
     initReturnSpot();
     initHeroSlides();
     initGalleryVideos();
+    initRowMasonry();
     initLightbox();
     initCarousels();
     initProductGallery();

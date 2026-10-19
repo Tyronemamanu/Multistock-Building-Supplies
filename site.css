@@ -4026,3 +4026,11 @@ button.gv-item { cursor: pointer; }
   .gallery-videos::-webkit-scrollbar { display: none; }
   .gv-item, .gv-item.is-feature { flex: 0 0 62%; scroll-snap-align: start; }
 }
+
+/* Gallery photos run left to right, row by row (newest at the end), packed tight like a masonry:
+   each photo spans as many 8px grid rows as its height needs (js/site.js, initRowMasonry) */
+.masonry.is-rows { columns: auto; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: var(--stack); grid-auto-rows: 8px; }
+.masonry.is-rows .masonry-item { margin-bottom: 0; }
+@media (max-width: 900px) { .masonry.is-rows { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) { .masonry.is-rows { grid-template-columns: 1fr; } }
+.masonry.is-rows .masonry-item { align-self: start; }
