@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Multistock Building Resources Pty Ltd</title>
 <meta name="description" content="Multistock Building Resources Pty Ltd &mdash; Australia's complete building and renovation supply centre. Wholesale and retail flooring, bathrooms, kitchens, tiles and tapware.">
 <link rel="canonical" href="https://multistock.com.au/">
@@ -13,639 +13,554 @@
 <meta property="og:url" content="https://multistock.com.au/">
 <meta property="og:image" content="https://multistock.com.au/images/bedroom-main.webp">
 <meta property="og:locale" content="en_AU">
+<meta name="theme-color" content="#060B33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&family=Poppins:wght@300;400;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=161">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/hero-bathroom.webp" fetchpriority="high">
+<link rel="stylesheet" href="site.css?v=665">
 </head>
-<body>
+<body class="has-hero">
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / nav -->
-  <header class="header">
-    <div class="logo">
-      <img src="images/multi-logo-web.png" class="logo-img" alt="Multistock Building Resources Pty Ltd">
-    </div>
-    <div class="nav-wrap">
-      <nav class="nav" id="main-nav">
-        <a href="index.html">HOME</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container container-wide header-inner">
+      <a class="brand" href="index.html" aria-label="Multistock Building Resources — home">
+        <img class="logo-dark" src="images/web/multi-logo-web.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328">
+        <img class="logo-light" src="images/web/multi-logo-white.webp" alt="" aria-hidden="true" width="1000" height="328">
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
         <div class="nav-dd">
-          <a href="#" class="nav-dd-toggle">PRODUCTS ▾</a>
-          <div class="nav-dd-menu">
-            <a href="flooring.html">Flooring</a>
-            <a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a>
-            <a href="carpet.html">Carpet</a>
-            <a href="tiles.html">Tiles</a>
+          <button type="button" aria-expanded="false">Products
+            <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-dd-menu is-mega">
+            <a class="mega-item" href="flooring.html"><img src="images/web/menu-flooring-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Flooring</b><span>Stone composite, acoustic LVP and engineered hardwood</span></span></a>
+            <a class="mega-item" href="bathrooms.html"><img src="images/web/menu-bathroomware-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Bathroom Ware &amp; Kitchen Ware</b><span>Vanities, showers, toilets, baths and tapware</span></span></a>
+            <a class="mega-item" href="carpet.html"><img src="images/web/menu-carpet-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Carpet</b><span>Plush, durable and stain-resistant carpet</span></span></a>
+            <a class="mega-item" href="tiles.html"><img src="images/web/menu-tiles-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Tiles</b><span>Floor, wall, outdoor, mosaic and natural stone</span></span></a>
+            <div class="mega-foot">
+              <span>Trade accounts available. Public welcome.</span>
+              <a href="products.html">View all products &rarr;</a>
+            </div>
           </div>
         </div>
-        <a href="gallery.html">GALLERY</a>
-        <a href="quote.html">CONTACT</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="projects-management.html">Projects / Management</a>
+        <a href="quote.html">Contact</a>
       </nav>
-      <div class="header-right">
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:0422968688" aria-label="Call Multistock on 0422 968 688">
+          <svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg><span>0422 968 688</span>
+        </a>
+        <a class="btn btn-sm" href="quote.html">Contact us
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Hero -->
-  <div class="hero-wrap">
-    <section class="hero">
-      <div class="hero-slides" id="hero-slides">
-        <div class="hero-slide" style="background-image:url('images/bathroom-hero-main.webp')"></div>
-        <div class="hero-slide hero-slide-framed">
-          <div class="hero-slide-blur" style="background-image:url('images/bathroomware-main.webp')"></div>
-          <div class="hero-slide-sharp" style="background-image:url('images/bathroomware-main.webp')"></div>
-        </div>
-        <div class="hero-slide hero-slide-framed">
-          <div class="hero-slide-blur" style="background-image:url('images/Bathroom-homepage-hero.webp')"></div>
-          <div class="hero-slide-sharp" style="background-image:url('images/Bathroom-homepage-hero.webp')"></div>
-        </div>
-        <div class="hero-slide" style="background-image:url('images/landroom-mainpage-hero.webp')"></div>
-        <div class="hero-slide" aria-hidden="true" style="background-image:url('images/bathroom-hero-main.webp')"></div>
-      </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-content">
-        <p class="hero-eyebrow">One Team. One Solution.</p>
-        <h1>COMPLETE RENOVATIONS</h1>
-        <p class="hero-copy">Supplying Builders, Renovators and Homeowners with Premium flooring, bathrooms, kitchens, tiles, tapware products and more</p>
-      </div>
-      <div class="hero-dots" id="hero-dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-      </div>
-      <!-- Feature strip (inside hero, bottom) -->
-      <div class="features">
-        <div class="feature">
-          <div class="feature-icon">✅</div>
-          <div>
-            <h4>PREMIUM QUALITY</h4>
-            <p>Trusted brands and premium products</p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">👥</div>
-          <div>
-            <h4>EXPERT SUPPORT</h4>
-            <p>Friendly advice from industry professionals</p>
-          </div>
-        </div>
-        <div class="feature">
-          <div class="feature-icon">🚚</div>
-          <div>
-            <h4>FAST DELIVERY</h4>
-            <p>Reliable and efficient Australia-wide</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home<span>01</span></a>
+      <a href="products.html">All Products<span>02</span></a>
+      <a href="flooring.html">Flooring<span>03</span></a>
+      <a href="bathrooms.html">Bathroom &amp; Kitchen Ware<span>04</span></a>
+      <a href="carpet.html">Carpet<span>05</span></a>
+      <a href="tiles.html">Tiles<span>06</span></a>
+      <a href="gallery.html">Gallery<span>07</span></a>
+      <a href="projects-management.html">Projects / Management<span>08</span></a>
+      <a href="quote.html">Contact<span>09</span></a>
+    </div>
+    <div class="mobile-nav-foot">
+      <p><a href="tel:0422968688">0422 968 688</a><br>
+      <a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a><br>
+      2/25 Grant Road, Somerville Vic 3912</p>
+    </div>
   </div>
 
-  <!-- Shop by category -->
-  <section class="categories categories-products">
-    <h2 class="reveal io-reveal">PRODUCTS</h2>
-    <div class="category-grid">
-      <a href="flooring.html" class="category-card reveal reveal-strong io-reveal" style="transition-delay:0s">
-        <div class="category-img" style="background-image:url('images/flooring-card-2.webp')"></div>
-        <p>FLOORING</p>
-      </a>
-      <a href="bathrooms.html" class="category-card reveal reveal-strong io-reveal" style="transition-delay:0.12s">
-        <div class="category-img" style="background-image:url('images/bathroomware-card-2.webp')"></div>
-        <p>BATHROOM WARE &amp; KITCHEN WARE</p>
-      </a>
-      <a href="carpet.html" class="category-card reveal reveal-strong io-reveal" style="transition-delay:0.24s">
-        <div class="category-img" style="background-image:url('images/carpet-main.webp')"></div>
-        <p>CARPET</p>
-      </a>
-      <a href="tiles.html" class="category-card reveal reveal-strong io-reveal" style="transition-delay:0.36s">
-        <div class="category-img" style="background-image:url('images/tiles-card.webp')"></div>
-        <p>TILES</p>
-      </a>
+<main id="main">
+
+  <!-- Hero: the Formatt hero over a still photo (the earlier looping video is still in video/, unused) -->
+  <div class="hero-pin" id="hero-pin">
+  <section class="hero hero-scrub">
+    <div class="hero-media">
+      <img class="hero-photo" src="images/hero-bathroom.webp" alt="Modern bathroom with a freestanding bath, glass shower, stone tiles and a timber vanity with twin basins" width="1672" height="941" data-parallax="14" fetchpriority="high" decoding="async">
+    </div>
+    <div class="container container-wide hero-body">
+      <span class="eyebrow" data-reveal="up">One Team. One Solution.</span>
+      <h1 data-split><span class="hero-first">Complete</span> <em class="hero-fancy">Renovations</em></h1>
+      <p class="hero-lead" data-reveal="up" data-delay="0.16">Supplying Builders, Renovators and Homeowners with Premium flooring, bathrooms, kitchens, tiles, tapware products and more</p>
+      <div class="hero-actions" data-reveal="up" data-delay="0.24">
+        <a class="btn btn-paper" href="#products">See our products <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+        <a class="btn btn-light" href="quote.html">Contact us</a>
+      </div>
+
+      <div class="hero-bar" data-reveal="up" data-delay="0.34">
+        <div><strong><span data-count="20" data-suffix="+">20+</span></strong>Years industry experience</div>
+        <div><strong>Wholesale</strong>Pricing available</div>
+        <div><strong>Australia&#8209;wide</strong>Reliable and efficient delivery</div>
+      </div>
+    </div>
+    <span class="hero-scroll" aria-hidden="true">Scroll</span>
+  </section>
+
+  <!-- Decorative material ribbon, continuously looping beneath the hero film. -->
+  <div class="marquee collection-ribbon" aria-hidden="true">
+    <div class="marquee-window">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">Flooring</span>
+          <span class="marquee-item">Bathroom ware</span>
+          <span class="marquee-item">Kitchen ware</span>
+          <span class="marquee-item">Carpet</span>
+          <span class="marquee-item">Tiles</span>
+          <span class="marquee-item">Tapware</span>
+          <span class="marquee-item">Vanities</span>
+          <span class="marquee-item">Showers</span>
+          <span class="marquee-item">Toilets</span>
+          <span class="marquee-item">Baths</span>
+        </div>
+        <div class="marquee-group">
+          <span class="marquee-item">Flooring</span>
+          <span class="marquee-item">Bathroom ware</span>
+          <span class="marquee-item">Kitchen ware</span>
+          <span class="marquee-item">Carpet</span>
+          <span class="marquee-item">Tiles</span>
+          <span class="marquee-item">Tapware</span>
+          <span class="marquee-item">Vanities</span>
+          <span class="marquee-item">Showers</span>
+          <span class="marquee-item">Toilets</span>
+          <span class="marquee-item">Baths</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div><!-- /.hero-pin -->
+
+  <!-- About (three photos on the left, wording on the right; text and colours as the rest of the site) -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="about">
+        <div class="about-photos" data-reveal="left">
+          <div class="about-photo is-tall"><img src="images/about-bathroom.webp" alt="Completed bathroom with a frameless glass shower screen, brushed tapware and a back-to-wall toilet" width="1200" height="1600" loading="lazy" decoding="async"></div>
+          <div class="about-photo-col">
+            <div class="about-photo"><img src="images/about-basin.webp" alt="Above-counter basins with wall-mounted brushed tapware" width="1600" height="1200" loading="lazy" decoding="async"></div>
+            <div class="about-photo"><img src="images/gallery-3a.webp" alt="Completed kitchen renovation project" width="1600" height="1255" loading="lazy" decoding="async"></div>
+          </div>
+        </div>
+        <div class="about-body" data-reveal="right">
+          <span class="eyebrow">About</span>
+          <h2>Providing excellent customer service, with over <em>20 years</em> industry experience.</h2>
+          <!-- wording supplied by the client, 2026-10-15 -->
+          <p class="lead">At Multistock Building Resources, we’re here to help bring your building and renovation ideas to life with a can-do attitude.</p>
+          <p>From our Somerville showroom, we supply flooring, carpet, tiles, bathroom ware, tapware and kitchenware at wholesale prices, direct to the public. We’re here for builders, renovators and homeowners.</p>
+          <p>We offer quality products at great prices, along with friendly, personal service. Tell us your build and we’ll help you choose products to suit your space and budget, from your first enquiry through to delivery.</p>
+          <p class="about-tag"><span>It’s as real as it gets.</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section bg-warm" id="products">
+    <div class="container">
+      <div class="section-head section-head-row" data-reveal="up">
+        <div class="section-head-row-text">
+          <span class="eyebrow">What we supply</span>
+          <h2>Products</h2>
+          <p class="lead">Everything a renovation needs in one place, from the floor up.</p>
+          <p class="section-intro">Hard-wearing flooring, plush carpet, floor and wall tiles, and bathroom and kitchen ware, from vanities and showers to sinks and tapware. Explore the ranges below, or visit the showroom to see them in person.</p>
+        </div>
+        <a class="link-underline" href="products.html">View all products <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="card-grid cols-4">
+        <a class="service-card" href="flooring.html" data-reveal="scale">
+          <img src="images/flooring-card-3.webp" alt="Flooring from Multistock Building Resources" loading="lazy" decoding="async">
+          <span class="card-index">01</span>
+          <h3>Flooring</h3>
+          <p>Stone composite, acoustic LVP and engineered hardwood</p>
+          <span class="link-underline">Explore <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="service-card" href="bathrooms.html" data-reveal="scale">
+          <img src="images/bathroomware-card-3.webp" alt="Bathroom Ware &amp; Kitchen Ware from Multistock Building Resources" loading="lazy" decoding="async">
+          <span class="card-index">02</span>
+          <h3>Bathroom Ware &amp; Kitchen Ware</h3>
+          <p>Vanities, showers, toilets, baths and tapware</p>
+          <span class="link-underline">Explore <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="service-card" href="carpet.html" data-reveal="scale">
+          <img src="images/carpet-card-3.webp" alt="Carpet from Multistock Building Resources" loading="lazy" decoding="async">
+          <span class="card-index">03</span>
+          <h3>Carpet</h3>
+          <p>Plush, durable and stain-resistant carpet</p>
+          <span class="link-underline">Explore <span aria-hidden="true">&rarr;</span></span>
+        </a>
+        <a class="service-card" href="tiles.html" data-reveal="scale">
+          <img src="images/tiles-card-3.webp" alt="Tiles from Multistock Building Resources" loading="lazy" decoding="async">
+          <span class="card-index">04</span>
+          <h3>Tiles</h3>
+          <p>Floor, wall, outdoor, mosaic and natural stone</p>
+          <span class="link-underline">Explore <span aria-hidden="true">&rarr;</span></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section-sm bg-ink">
+    <div class="container">
+      <div class="stat-row">
+        <div class="stat" data-reveal="up"><strong><span data-count="20" data-suffix="+">20+</span></strong><span>Years industry experience</span></div>
+        <div class="stat" data-reveal="up" data-delay="0.08"><strong><span data-count="4">4</span></strong><span>Product ranges &mdash; flooring, bathroom &amp; kitchen ware, carpet and tiles</span></div>
+        <div class="stat" data-reveal="up" data-delay="0.16"><strong><span data-count="4">4</span></strong><span>Trusted suppliers behind our products</span></div>
+        <div class="stat" data-reveal="up" data-delay="0.24"><strong>One</strong><span>Team, one solution</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- (The gallery is reached from the menu; it is not previewed on the home page.) -->
+  <!-- Why builders choose us -->
+  <section class="section">
+    <div class="container">
+      <div class="why">
+        <div class="why-body" data-reveal="left">
+          <span class="eyebrow">Why builders choose us</span>
+          <h2>Your complete renovation and building <em>supply partner.</em></h2>
+          <p class="lead">Everything you need, one trusted supplier.</p>
+          <p class="why-text">Whether you're a builder, renovator, developer, or owner builder, Multistock Building Resources supplies quality renovation products at competitive trade prices. From flooring and tiles to bathroom and kitchen ware, you can source everything from one trusted supplier, with fast, reliable supply and friendly advice, helping you complete every project on time and within budget.</p>
+          <ul class="checklist why-list">
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Competitive trade prices</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Quality products from trusted suppliers</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Fast and reliable supply</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>One stop renovation shop</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Friendly personal service</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Product advice and material selection</span></li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span>Ideal for builders, renovators, developers, and owner builders</span></li>
+          </ul>
+        </div>
+        <figure class="why-photo" data-reveal="right">
+          <img src="images/why-basin-tall.webp" alt="Round basin holding a bottle on ice, with a wall-mounted brushed tap, stone wall tiles and a timber vanity" width="1122" height="1402" loading="lazy" decoding="async">
+        </figure>
+      </div>
     </div>
   </section>
 
   <!-- Supplied by -->
-  <section class="suppliers reveal io-reveal">
-    <h2 class="reveal io-reveal">SUPPLIED BY</h2>
-    <div class="suppliers-grid">
-      <div class="supplier-logo reveal reveal-strong io-reveal" style="transition-delay:0s">
+  <section class="section-sm">
+    <div class="container">
+      <div class="section-head" data-reveal="up" style="margin-bottom:clamp(28px,3vw,44px)">
+        <span class="eyebrow">Supplied by</span>
+      </div>
+      <div class="accred is-suppliers" data-reveal="up">
         <img src="images/Supplier%201.png" alt="Trade Suppliers International" loading="lazy">
-      </div>
-      <div class="supplier-logo reveal reveal-strong io-reveal" style="transition-delay:0.12s">
         <img src="images/Supplier%202.png" alt="RAP Global" loading="lazy">
-      </div>
-      <div class="supplier-logo reveal reveal-strong io-reveal" style="transition-delay:0.24s">
         <img src="images/Supplier%203.png" alt="UB Trading" loading="lazy">
-      </div>
-      <div class="supplier-logo reveal reveal-strong io-reveal" style="transition-delay:0.36s">
         <img src="images/carysil-logo.png" alt="Carysil — German Engineered" loading="lazy">
       </div>
     </div>
   </section>
 
-  <!-- Reviews -->
-  <section class="reviews reveal reveal-strong io-reveal">
-    <h2>WHAT OUR CUSTOMERS SAY</h2>
-    <div class="reviews-track-wrap">
-      <div class="reviews-track">
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
+  <!-- Testimonials: heading + Google rating panel, then the reviews as a row of glass cards.
+       The cards come from the REVIEWS list in tools/build.py: add a line there and it appears
+       here. When there are more than fit in one row, arrows appear and the row slides. -->
+  <section class="section-sm bg-ink">
+    <div class="container">
+      <div class="tm">
+        <div class="tm-head" data-reveal="up">
+          <div class="tm-title">
+            <span class="eyebrow">Testimonials</span>
+            <h2>What our customers <em>say.</em></h2>
           </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
+          <div class="tm-panel">
+            <div class="tm-rating">
+              <span class="tm-g" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" class="review-g"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3h3.86c2.26-2.08 3.58-5.15 3.58-8.65z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.08 7.94-2.91l-3.86-3a7.2 7.2 0 0 1-10.73-3.79H1.37v3.09A11.99 11.99 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.35 14.3a7.2 7.2 0 0 1 0-4.6V6.61H1.37a12 12 0 0 0 0 10.78l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.950 1.190 15.240 0 12 0 7.300 0 3.250 2.700 1.370 6.610l3.980 3.090A7.200 7.200 0 0 1 12 4.750z"/></svg></span>
+              <strong>5.0</strong>
+              <span class="tm-rating-meta"><span class="review-stars" aria-label="Rated 5 out of 5" data-stagger><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg></span><em>on Google</em></span>
+            </div>
+            <a class="tm-link" href="https://www.google.com/maps/search/?api=1&amp;query=Multistock%20Building%20Resources%2C%202%2F25%20Grant%20Road%2C%20Somerville%20VIC" target="_blank" rel="noopener">See all reviews on Google <span aria-hidden="true">&#8599;</span></a>
+          </div>
         </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
+        <div class="tm-slider">
+          <div class="tm-track" data-stagger tabindex="0" aria-label="Customer reviews">
+            <article class="tm-card">
+              <span class="tm-mark" aria-hidden="true">&ldquo;</span>
+              <span class="review-stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg></span>
+              <blockquote>I will be calling on Nick again as I have more work for him.</blockquote>
+              <footer class="tm-by">
+                <span class="tm-avatar" aria-hidden="true">V</span>
+                <span class="tm-who"><strong>Val Ollive</strong><span>Google review</span></span>
+                <span class="tm-src" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" class="review-g"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3h3.86c2.26-2.08 3.58-5.15 3.58-8.65z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.08 7.94-2.91l-3.86-3a7.2 7.2 0 0 1-10.73-3.79H1.37v3.09A11.99 11.99 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.35 14.3a7.2 7.2 0 0 1 0-4.6V6.61H1.37a12 12 0 0 0 0 10.78l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.950 1.190 15.240 0 12 0 7.300 0 3.250 2.700 1.370 6.610l3.980 3.090A7.200 7.200 0 0 1 12 4.750z"/></svg></span>
+              </footer>
+            </article>
+            <article class="tm-card">
+              <span class="tm-mark" aria-hidden="true">&ldquo;</span>
+              <span class="review-stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg></span>
+              <blockquote>Great team, Great job built amazing Pergola &amp; Renovated Bathroom &#128077;</blockquote>
+              <footer class="tm-by">
+                <span class="tm-avatar" aria-hidden="true">T</span>
+                <span class="tm-who"><strong>Tyrone Mamanu</strong><span>Google review</span></span>
+                <span class="tm-src" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" class="review-g"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3h3.86c2.26-2.08 3.58-5.15 3.58-8.65z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.08 7.94-2.91l-3.86-3a7.2 7.2 0 0 1-10.73-3.79H1.37v3.09A11.99 11.99 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.35 14.3a7.2 7.2 0 0 1 0-4.6V6.61H1.37a12 12 0 0 0 0 10.78l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.950 1.190 15.240 0 12 0 7.300 0 3.250 2.700 1.370 6.610l3.980 3.090A7.200 7.200 0 0 1 12 4.750z"/></svg></span>
+              </footer>
+            </article>
+            <article class="tm-card">
+              <span class="tm-mark" aria-hidden="true">&ldquo;</span>
+              <span class="review-stars" aria-label="Rated 5 out of 5"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.6l2.47 5.2 5.53.77-4.03 3.86 1 5.47L10 14.3l-4.97 2.6 1-5.47L2 7.57l5.53-.77z"/></svg></span>
+              <blockquote>We highly recommend Nick and his team.</blockquote>
+              <footer class="tm-by">
+                <span class="tm-avatar" aria-hidden="true">T</span>
+                <span class="tm-who"><strong>Tracey Gregory</strong><span>Google review</span></span>
+                <span class="tm-src" aria-hidden="true"><svg viewBox="0 0 24 24" aria-hidden="true" class="review-g"><path fill="#4285F4" d="M23.5 12.27c0-.79-.07-1.54-.2-2.27H12v4.3h6.45a5.52 5.52 0 0 1-2.39 3.62v3h3.86c2.26-2.08 3.58-5.15 3.58-8.65z"/><path fill="#34A853" d="M12 24c3.24 0 5.96-1.08 7.94-2.91l-3.86-3a7.2 7.2 0 0 1-10.73-3.79H1.37v3.09A11.99 11.99 0 0 0 12 24z"/><path fill="#FBBC05" d="M5.35 14.3a7.2 7.2 0 0 1 0-4.6V6.61H1.37a12 12 0 0 0 0 10.78l3.98-3.09z"/><path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.950 1.190 15.240 0 12 0 7.300 0 3.250 2.700 1.370 6.610l3.980 3.090A7.200 7.200 0 0 1 12 4.750z"/></svg></span>
+              </footer>
+            </article>
           </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
+          <div class="tm-nav" hidden>
+            <button type="button" class="tm-btn tm-prev" aria-label="Previous reviews"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button type="button" class="tm-btn tm-next" aria-label="More reviews"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <span class="tm-count" aria-live="polite"></span>
+            <span class="tm-bar" aria-hidden="true"><i></i></span>
           </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <!-- duplicate of the above 15 cards, for a seamless -50% loop -->
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#1a7a6e">V</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"I will be calling on Nick again as I have more work for him."</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#7a2e2e">👤</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"Great team, Great job built amazing Pergola &amp; Renovated Bathroom 👍"</p>
-        </div>
-        <div class="review-card" aria-hidden="true">
-          <div class="review-top">
-            <div class="review-avatar" style="background:#458247">T</div>
-            <div class="review-stars">★★★★★</div>
-          </div>
-          <p class="review-text">"We highly recommend Nick and his team."</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Value strip -->
-  <section class="value-strip reveal reveal-strong io-reveal">
-    <div class="value-item"><h3>Save Time</h3></div>
-    <div class="value-item"><h3>Save Money</h3></div>
-    <div class="value-item"><h3>Build With Confidence</h3></div>
-  </section>
-
-  <!-- About -->
-  <section class="about-feature">
-    <h2 class="reveal io-reveal" style="transition-delay:0s">ABOUT</h2>
-    <div class="about-copy">
-      <p class="reveal io-reveal" style="transition-delay:0.15s">Providing excellent customer service, with over 20 years industry experience.</p>
-      <p class="reveal io-reveal" style="transition-delay:0.3s">At Multistock Building Resources we strive to accommodate the needs and dreams of our customers with a can-do attitude.</p>
-      <p class="reveal io-reveal" style="transition-delay:0.45s">We provide quality products with great prices to match.</p>
-      <p class="reveal io-reveal" style="transition-delay:0.6s">You want it, we got it!</p>
+  <!-- Perfect for (plain page background, at the user's request) -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="pfx">
+        <div class="pfx-head" data-reveal="up">
+          <span class="eyebrow">Who we supply</span>
+          <h2>Perfect for projects <em>of every size.</em></h2>
+          <p class="pfx-intro">From a single bathroom or kitchen renovation to home extensions, investment properties and multi-unit developments, Multistock supplies the flooring, bathroom ware, kitchen ware, tiles and tapware to get it done.</p>
+        </div>
+        <div class="pfx-row">
+          <figure class="pfx-photo" data-reveal="left">
+            <img src="images/perfect-living-tall.webp" alt="Living room with timber-look flooring, a sofa and framed prints" width="1024" height="1536" loading="lazy" decoding="async">
+          </figure>
+          <ul class="pfx-list" data-reveal="right">
+            <li><span>01</span><strong>Bathroom renovations</strong><p>Showers, toilets, baths, vanities, basins and tapware, with wall and floor tiles to finish the room.</p></li>
+            <li><span>02</span><strong>Kitchen renovations</strong><p>Cabinetry, benchtops, splashbacks, kitchen sinks, tapware and hardware to suit any project and budget.</p></li>
+            <li><span>03</span><strong>Home extensions</strong><p>Flooring, carpet and tiles for the new space, with friendly product advice on what to choose.</p></li>
+            <li><span>04</span><strong>Investment property upgrades</strong><p>Quality flooring, carpet and bathroom ware at competitive trade prices, to help you stay within budget.</p></li>
+            <li><span>05</span><strong>Multi-unit developments</strong><p>Wholesale supply for every unit, with trade accounts and reliable Australia-wide delivery.</p></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Why builders choose us -->
-  <section class="why-choose">
-    <div class="why-inner">
-      <div class="why-left reveal io-reveal" style="transition-delay:0s">
-        <div class="why-card">
-          <h2>WHY BUILDERS CHOOSE US</h2>
-          <div class="why-grid">
-            <div class="why-item">Competitive trade prices</div>
-            <div class="why-item">Quality products from trusted suppliers</div>
-            <div class="why-item">Fast and reliable supply</div>
-            <div class="why-item">One stop renovation shop</div>
-            <div class="why-item">Friendly personal service</div>
-            <div class="why-item">Product advice and material selection</div>
-            <div class="why-item">Ideal for builders, renovators, developers, and owner builders</div>
-          </div>
+  <!-- Features ("The difference"): centred heading, then the three points as nodes on one horizontal line -->
+  <section class="section bg-warm">
+    <div class="container">
+      <div class="track">
+        <div class="track-head" data-reveal="up">
+          <span class="eyebrow is-centered">The difference</span>
+          <h2>Save time. Save money. <em>Build with confidence.</em></h2>
         </div>
-      </div>
-      <div class="why-right reveal io-reveal" style="transition-delay:0.15s">
-        <div class="why-card">
-          <h2>PERFECT FOR</h2>
-          <div class="why-grid">
-            <div class="why-item">Bathroom renovations</div>
-            <div class="why-item">Kitchen renovations</div>
-            <div class="why-item">Home extensions</div>
-            <div class="why-item">New home builds</div>
-            <div class="why-item">Investment property upgrades</div>
-            <div class="why-item">Multi-unit developments</div>
-          </div>
-        </div>
-      </div>
-      <div class="why-third reveal io-reveal" style="transition-delay:0.3s">
-        <div class="why-card">
-          <h2>YOUR COMPLETE RENOVATION AND BUILDING SUPPLY PARTNER</h2>
-          <p class="why-sub">Everything you need, one trusted supplier.</p>
-          <p class="why-para">Whether you're a builder, renovator, developer, or owner builder, Multistock Building Resources supplies quality renovation products at competitive trade prices, helping you complete every project on time and within budget.</p>
+        <div class="track-row">
+          <span class="track-line" aria-hidden="true"></span>
+          <ul class="track-list">
+          <li>
+            <span class="track-node"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v6c0 4.4-3.3 7.6-8 8.6C7.3 20.6 4 17.4 4 13V7l8-4zM9 12l2 2 4-4"/></svg></span>
+            <h3>Premium Quality</h3>
+            <p>Trusted brands and premium products</p>
+          </li>
+          <li>
+            <span class="track-node"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.4c2.1.8 3.5 2.7 3.5 5.6"/></svg></span>
+            <h3>Expert Support</h3>
+            <p>Friendly advice from industry professionals</p>
+          </li>
+          <li>
+            <span class="track-node"><svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M2 6h12v10H2zM14 9h4l4 4v3h-8z"/><circle cx="6.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></span>
+            <h3>Fast Delivery</h3>
+            <p>Reliable and efficient Australia-wide</p>
+          </li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section class="faq">
-    <h2>FREQUENTLY ASKED QUESTIONS</h2>
-    <div class="faq-list">
-      <div class="faq-item reveal" style="transition-delay:0s">
-        <button class="faq-q" type="button" aria-expanded="false">
-          <span>Do you sell to the public, or trade only?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a"><p>Both — we're a wholesale and retail supplier. Trade accounts are available, and the public is always welcome in our showroom.</p></div>
-      </div>
-      <div class="faq-item reveal" style="transition-delay:0.1s">
-        <button class="faq-q" type="button" aria-expanded="false">
-          <span>What are the warranties on your products?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a"><p>The warranties vary depending on the product and the brand. For more information, please contact our team.</p></div>
-      </div>
-      <div class="faq-item reveal" style="transition-delay:0.3s">
-        <button class="faq-q" type="button" aria-expanded="false">
-          <span>Can I get a quote for my project?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a"><p>Absolutely. Request a free quote through our <a href="quote.html">contact page</a> or drop into the showroom, and our experienced team will help with the right products for your space.</p></div>
-      </div>
-      <div class="faq-item reveal" style="transition-delay:0.4s">
-        <button class="faq-q" type="button" aria-expanded="false">
-          <span>Do you deliver?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a"><p>Yes — we offer reliable and efficient delivery Australia-wide. Talk to our team about delivery options for your order.</p></div>
-      </div>
-      <div class="faq-item reveal" style="transition-delay:0.5s">
-        <button class="faq-q" type="button" aria-expanded="false">
-          <span>Where is your showroom and what are your hours?</span>
-          <span class="faq-icon" aria-hidden="true">+</span>
-        </button>
-        <div class="faq-a"><p>Visit us at 2/25 Grant Road, Somerville VIC 3912. We're open Mon–Thu 8:30am–5:30pm, Fri 8:30am–4:30pm, and closed on weekends.</p></div>
+  <section class="section bg-white">
+    <div class="container">
+      <div class="faq-stack">
+        <div class="faq-head" data-reveal="up">
+          <span class="eyebrow is-centered">Common questions</span>
+          <h2>Frequently asked <em>questions</em></h2>
+          <p class="faq-ask"><a class="link-underline" href="quote.html">Ask a question <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+        <div class="accordion" data-reveal="up" data-delay="0.1">
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">Do you sell to the public, or trade only?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>Both — we're a wholesale and retail supplier. Trade accounts are available, and the public is always welcome in our showroom.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">What are the warranties on your products?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>The warranties vary depending on the product and the brand. For more information, please contact our team.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">Can I get a quote for my project?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>Absolutely. Request a free quote through our <a class="link-underline" style="display:inline;text-transform:none;letter-spacing:0;font-size:inherit" href="quote.html">contact page</a> or drop into the showroom, and our experienced team will help with the right products for your space.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">Do you do complete renovations?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>Yes — we offer turnkey solutions from concept to completion, including new-build multi-unit developments and preparing homes for sale.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">Do you deliver?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>Yes — we offer reliable and efficient delivery Australia-wide. Talk to our team about delivery options for your order.</p></div></div>
+          </div>
+          <div class="acc-item">
+            <button class="acc-trigger" type="button">Where is your showroom and what are your hours?<span class="acc-icon" aria-hidden="true"></span></button>
+            <div class="acc-panel"><div class="acc-panel-inner"><p>Visit us at 2/25 Grant Road, Somerville VIC 3912. We're open Mon–Thu 8:30am–5:30pm, Fri 8:30am–4:30pm, and closed on weekends.</p></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Partners -->
-  <section class="partners reveal reveal-strong io-reveal">
-    <h2>PARTNERSHIP</h2>
-    <p class="partners-sub">We are proud to announce that Multistock & NSL have joined together to offer a complete turnkey solution for all your renovation needs. Through strong relationships and negotiated prices with our trusted suppliers, we are now able to provide discounted prices across a wide range of renovation products and services.</p>
-    <div class="partners-grid">
-      <div class="partner-logo">
-        <img src="images/NSL-Building-Service-black.svg" alt="NSL Building Service">
+  <!-- Partnership (in the plain band): centred — label, heading, NSL logo, then the paragraph -->
+  <section class="section">
+    <div class="container">
+      <div class="partner" data-reveal="up">
+        <span class="eyebrow is-centered">Partnership</span>
+        <h2><em>One Team. One Solution.</em> Multistock &amp; NSL &mdash; Complete Renovations.</h2>
+        <div class="partner-mark"><img src="images/NSL-Building-Service-black.svg" alt="NSL Building Service"></div>
+        <p>We are proud to announce that Multistock &amp; NSL have joined together to offer a complete turnkey solution for all your renovation needs. Through strong relationships and negotiated prices with our trusted suppliers, we are now able to provide discounted prices across a wide range of renovation products and services.</p>
       </div>
-    </div>
-    <p class="partners-tagline">Multistock &amp; NSL — One Team. One Solution. Complete Renovations.</p>
-  </section>
-
-  <!-- Quote banner -->
-  <section class="quote-banner">
-    <div class="quote-left">
-      <img src="images/multi-logo-web.png" class="quote-icon-img" alt="Multistock Building Resources Pty Ltd">
-      <div>
-        <h3>REQUEST A FREE QUOTE TODAY</h3>
-        <p>Speak with our experienced team about your next project.</p>
-      </div>
-    </div>
-    <a href="quote.html" class="btn btn-quote">REQUEST A QUOTE ›</a>
-  </section>
-
-  <!-- Info row / footer -->
-  <section class="info-row">
-    <div class="footer-cols">
-      <div class="footer-contact-col">
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2.25c-3.87 0-7 3.02-7 6.75 0 4.94 6.02 11.53 6.28 11.81a.98.98 0 0 0 1.44 0C13.98 20.53 20 13.94 20 9c0-3.73-3.13-6.75-7-6.75Z" fill="#e2574c"/>
-            <circle cx="12" cy="9" r="2.55" fill="#4d4d4d"/>
-          </svg>
-          <div>
-            <h4>VISIT OUR SHOWROOM</h4>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener">2/25 Grant Road, Somerville Vic 3912</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#3d87cc"/>
-            <g fill="none" stroke="#333333" stroke-width="1.3">
-              <line x1="12" y1="2.7" x2="12" y2="21.3"/>
-              <ellipse cx="12" cy="12" rx="4.5" ry="9.3"/>
-              <line x1="2.7" y1="12" x2="21.3" y2="12"/>
-              <line x1="4.4" y1="7.4" x2="19.6" y2="7.4"/>
-              <line x1="4.4" y1="16.6" x2="19.6" y2="16.6"/>
-            </g>
-          </svg>
-          <div>
-            <h4>WHOLESALE &amp; RETAIL</h4>
-            <p>Trade accounts available. Public welcome</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6.4 3.5H9c.5 0 .9.35 1 .84l.86 4.02c.08.4-.05.8-.34 1.07l-1.7 1.6a13.6 13.6 0 0 0 5.15 5.15l1.6-1.7c.27-.29.68-.42 1.07-.34l4.02.86c.49.11.84.5.84 1V19c0 .83-.67 1.5-1.5 1.5C10.9 20.5 3.5 13.1 3.5 5A1.5 1.5 0 0 1 5 3.5Z" fill="#3fa35a"/>
-          </svg>
-          <div>
-            <h4>CALL US</h4>
-            <p><a href="tel:0422968688">0422 968 688</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2.5" y="5" width="19" height="14" rx="2.6" fill="#ffffff"/>
-            <path d="M3.6 7.3 12 12.9 20.4 7.3" fill="none" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>EMAIL US</h4>
-            <p><a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#7a6fce"/>
-            <path d="M12 6.6V12l3.7 2.2" fill="none" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>OPENING HOURS</h4>
-            <p>Mon - Thu: 8:30am - 5:30pm<br>Fri: 8:30am - 4:30pm<br>Sat - Sun: Closed</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Multistock Building Resources Pty Ltd
-      <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
     </div>
   </section>
 
-<script>
-  var toggle = document.getElementById('nav-toggle');
-  var nav = document.getElementById('main-nav');
-  toggle.addEventListener('click', function () {
-    var isOpen = nav.classList.toggle('open');
-    toggle.classList.toggle('open', isOpen);
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
+</main>
 
-  var track = document.getElementById('hero-slides');
-  var dots = document.querySelectorAll('#hero-dots .dot');
-  var slideCount = track.children.length;
-  var realCount = slideCount - 1;
-  var index = 0;
+  <section class="cta-band section">
+    <div class="cta-band-media" aria-hidden="true">
+      <img src="images/cta-bathroom.webp" alt="" width="1448" height="1086" loading="lazy" decoding="async">
+    </div>
+    <div class="container">
+      <div class="cta-inner">
+        <div data-reveal="up">
+          <span class="eyebrow">Free quote</span>
+          <h2>Request a free <em>quote today.</em></h2>
+          <p>Speak with our experienced team about your next project.</p>
+          <p class="cta-action"><a class="btn btn-brass" href="quote.html">Contact us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  function goTo(i, animate) {
-    track.style.transition = animate ? 'transform 1s ease' : 'none';
-    track.style.transform = 'translateX(-' + (i * (100 / slideCount)) + '%)';
-  }
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/multi-logo-footer.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328" loading="lazy">
+          </a>
+          <p class="footer-blurb">Australia's complete building and renovation supply centre. Wholesale and retail flooring, bathrooms, kitchens, tiles and tapware.</p>
+          <div class="footer-social">
+            <a class="soc soc-fb" href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Multistock on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+            <a class="soc soc-ig" href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Multistock on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad" x1="10%" y1="100%" x2="90%" y2="0%"><stop offset="0%" stop-color="#FFD521"/><stop offset="26%" stop-color="#F50000"/><stop offset="62%" stop-color="#B900B4"/><stop offset="100%" stop-color="#4C68D7"/></linearGradient></defs><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg></a>
+          </div>
+        </div>
 
-  setInterval(function () {
-    index++;
-    goTo(index, true);
-    dots.forEach(function (d, di) {
-      d.classList.toggle('active', di === index % realCount);
-    });
-    if (index === realCount) {
-      setTimeout(function () {
-        index = 0;
-        goTo(index, false);
-      }, 1000);
-    }
-  }, 4000);
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="flooring.html">Flooring</a></li>
+            <li><a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a></li>
+            <li><a href="carpet.html">Carpet</a></li>
+            <li><a href="tiles.html">Tiles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quote.html">Contact</a></li>
+          </ul>
+        </div>
 
-  document.querySelectorAll('.faq-q').forEach(function (btn) {
-    btn.addEventListener('click', function () {
-      var item = btn.closest('.faq-item');
-      var isOpen = item.classList.toggle('open');
-      btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-    });
-  });
+        <div class="footer-col">
+          <h4>Bathroom &amp; kitchen</h4>
+          <ul>
+            <li><a href="showers.html">Showers</a></li>
+            <li><a href="toilets.html">Toilets</a></li>
+            <li><a href="baths.html">Baths</a></li>
+            <li><a href="tapware.html">Tapware</a></li>
+            <li><a href="vanity.html">Vanity</a></li>
+            <li><a href="kitchen-sinks.html">Kitchen Sinks</a></li>
+            <li><a href="bathroom-sinks.html">Basins</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="shaving-cabinets.html">Shaving Cabinets</a></li>
+            <li><a href="carysil-tapware.html">Carysil Tapware</a></li>
+            <li><a href="appliances.html">Appliances</a></li>
+          </ul>
+        </div>
 
-  // Reveal system: IntersectionObserver for the products (fade in/out both directions),
-  // with a scroll-position check as a fallback that also covers every other .reveal element.
-  (function () {
-    var els = [].slice.call(document.querySelectorAll('.reveal'));
-    if (!els.length) return;
+        <div class="footer-col footer-contact">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:0422968688"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span>0422 968 688</span></a></li>
+            <li><a href="mailto:sales@multistock.com.au"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><span>sales@multistock.com.au</span></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span>2/25 Grant Road<br>Somerville Vic 3912</span></a></li>
+          </ul>
+          <div class="footer-hours">
+            <strong>Opening hours</strong>
+            <dl>
+              <div><dt>Mon &ndash; Thu</dt><dd>8:30am &ndash; 5:30pm</dd></div>
+              <div><dt>Fri</dt><dd>8:30am &ndash; 4:30pm</dd></div>
+              <div class="is-closed"><dt>Sat &ndash; Sun</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
 
-    // Primary: IntersectionObserver drives the .io-reveal products.
-    if ('IntersectionObserver' in window) {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          entry.target.classList.toggle('reveal-in', entry.isIntersecting);
-        });
-      }, { threshold: 0, rootMargin: '0px 0px 12% 0px' });
-      document.querySelectorAll('.io-reveal').forEach(function (el) { io.observe(el); });
-    }
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Multistock Building Resources Pty Ltd
+          <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
+        </span>
+        <span>Wholesale &amp; retail &mdash; trade accounts available, public welcome</span>
+      </div>
+    </div>
+  </footer>
 
-    // Fallback + non-IO elements: toggle based on scroll position.
-    function check() {
-      var vh = window.innerHeight || document.documentElement.clientHeight;
-      els.forEach(function (el) {
-        var r = el.getBoundingClientRect();
-        var inView = r.top < vh * 0.85 && r.bottom > vh * 0.15;
-        if (el.classList.contains('reveal-once')) {
-          if (inView) el.classList.add('reveal-in');
-        } else {
-          el.classList.toggle('reveal-in', inView);
-        }
-      });
-    }
-    window.addEventListener('scroll', check, { passive: true });
-    window.addEventListener('resize', check);
-    check();
-  })();
-</script>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-btn lightbox-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img alt="" decoding="async">
+      <figcaption class="lightbox-meta">
+        <span><em></em><br><strong></strong></span>
+        <span class="lightbox-counter"></span>
+      </figcaption>
+      <div class="lightbox-strip" role="tablist" aria-label="Choose an image"></div>
+    </figure>
+  </div>
+
+  <button type="button" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="mobile-cta">
+    <a class="btn btn-brass" href="tel:0422968688">Call us</a>
+    <a class="btn btn-light" href="quote.html">Contact us</a>
+  </div>
+
+<script src="js/motion.min.js"></script>
+<script src="js/site.js?v=665"></script>
+<script src="js/fx.js?v=665"></script>
 </body>
 </html>

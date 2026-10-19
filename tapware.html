@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tapware | Multistock Building Resources Pty Ltd</title>
 <meta name="description" content="Mixers, wall taps, spouts and tapware sets in a range of finishes. Visit our Somerville showroom to view the range.">
 <link rel="canonical" href="https://multistock.com.au/tapware.html">
@@ -13,216 +13,552 @@
 <meta property="og:url" content="https://multistock.com.au/tapware.html">
 <meta property="og:image" content="https://multistock.com.au/images/bathroomware-main.webp">
 <meta property="og:locale" content="en_AU">
+<meta name="theme-color" content="#060B33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=161">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/tapware-hero-3.webp" fetchpriority="high">
+<link rel="stylesheet" href="site.css?v=665">
 </head>
-<body>
+<body class="has-hero">
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / nav -->
-  <header class="header">
-    <div class="logo">
-      <a href="index.html"><img src="images/multi-logo-web.png" class="logo-img" alt="Multistock Building Resources Pty Ltd"></a>
-    </div>
-    <div class="nav-wrap">
-      <nav class="nav" id="main-nav">
-        <a href="index.html">HOME</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container container-wide header-inner">
+      <a class="brand" href="index.html" aria-label="Multistock Building Resources — home">
+        <img class="logo-dark" src="images/web/multi-logo-web.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328">
+        <img class="logo-light" src="images/web/multi-logo-white.webp" alt="" aria-hidden="true" width="1000" height="328">
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
         <div class="nav-dd">
-          <a href="#" class="nav-dd-toggle">PRODUCTS ▾</a>
-          <div class="nav-dd-menu">
-            <a href="flooring.html">Flooring</a>
-            <a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a>
-            <a href="carpet.html">Carpet</a>
-            <a href="tiles.html">Tiles</a>
+          <button type="button" aria-expanded="false">Products
+            <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-dd-menu is-mega">
+            <a class="mega-item" href="flooring.html"><img src="images/web/menu-flooring-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Flooring</b><span>Stone composite, acoustic LVP and engineered hardwood</span></span></a>
+            <a class="mega-item" href="bathrooms.html"><img src="images/web/menu-bathroomware-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Bathroom Ware &amp; Kitchen Ware</b><span>Vanities, showers, toilets, baths and tapware</span></span></a>
+            <a class="mega-item" href="carpet.html"><img src="images/web/menu-carpet-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Carpet</b><span>Plush, durable and stain-resistant carpet</span></span></a>
+            <a class="mega-item" href="tiles.html"><img src="images/web/menu-tiles-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Tiles</b><span>Floor, wall, outdoor, mosaic and natural stone</span></span></a>
+            <div class="mega-foot">
+              <span>Trade accounts available. Public welcome.</span>
+              <a href="products.html">View all products &rarr;</a>
+            </div>
           </div>
         </div>
-        <a href="gallery.html">GALLERY</a>
-        <a href="quote.html">CONTACT</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="projects-management.html">Projects / Management</a>
+        <a href="quote.html">Contact</a>
       </nav>
-      <div class="header-right">
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:0422968688" aria-label="Call Multistock on 0422 968 688">
+          <svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg><span>0422 968 688</span>
+        </a>
+        <a class="btn btn-sm" href="quote.html">Contact us
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Page banner -->
-  <div class="page-banner-wrap">
-    <section class="page-banner gallery-banner">
-      <div class="page-banner-content">
-        <a href="bathrooms.html" class="back-link" onclick="if(document.referrer){history.back();return false;}"><span class="back-arrow">‹</span> Back</a>
-        <span class="banner-eyebrow">Bathrooms</span>
-        <h1>TAPWARE</h1>
-        <span class="banner-divider" aria-hidden="true"></span>
-        <p class="banner-lead">Mixers, wall taps, spouts and tapware sets to suit every bathroom and budget.</p>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home<span>01</span></a>
+      <a href="products.html">All Products<span>02</span></a>
+      <a href="flooring.html">Flooring<span>03</span></a>
+      <a href="bathrooms.html">Bathroom &amp; Kitchen Ware<span>04</span></a>
+      <a href="carpet.html">Carpet<span>05</span></a>
+      <a href="tiles.html">Tiles<span>06</span></a>
+      <a href="gallery.html">Gallery<span>07</span></a>
+      <a href="projects-management.html">Projects / Management<span>08</span></a>
+      <a href="quote.html">Contact<span>09</span></a>
+    </div>
+    <div class="mobile-nav-foot">
+      <p><a href="tel:0422968688">0422 968 688</a><br>
+      <a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a><br>
+      2/25 Grant Road, Somerville Vic 3912</p>
+    </div>
+  </div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="hero-media">
+      <img src="images/tapware-hero-3.webp" alt="" fetchpriority="high" data-parallax="14" data-parallax-scale="1">
+    </div>
+    <div class="container container-wide page-hero-body">
+      <a class="back-btn" href="bathrooms.html" data-back><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 3.5 5 8l4.5 4.5"/></svg>Back</a>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><a href="bathrooms.html">Bathrooms</a><span aria-hidden="true">/</span><span>Tapware</span>
+      </nav>
+      <h1 data-split>Tapware</h1>
+      <p class="lead" data-reveal="up" data-delay="0.1">Mixers, wall taps, spouts and tapware sets to suit every bathroom and budget.</p>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="intro-copy" data-reveal="up">
+        <span class="eyebrow">Bathrooms</span>
         <p>Multistock stocks a complete range of tapware — from sleek basin and shower mixers through to wall taps, spouts and matching sets. Browse the styles below, or get in touch with our team for expert advice on the right tapware for your space.</p>
         <p>Our tapware pairs quality brassware with durable, tarnish-resistant finishes and water-efficient WELS ratings, in a range of styles to match any bathroom.</p>
         <p>Please feel free to visit our Somerville showroom to view these finishes in person.</p>
+        <div class="intro-actions">
+          <a class="btn" href="quote.html">Contact us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="link-underline" href="tel:0422968688">Call 0422 968 688 <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
-      <div class="banner-split" aria-hidden="true">
-        <div class="banner-half" style="background-image:url('images/tapware-hero-2.webp');background-size:contain;background-repeat:no-repeat;background-position:center;background-color:#2b2b2b"></div>
+    </div>
+  </section>
+
+  <section class="section bg-warm" id="range">
+    <div class="container container-wide">
+      <div class="section-head" data-reveal="up" style="margin-bottom:clamp(28px,3vw,44px)">
+        <span class="eyebrow">Tapware</span>
+        <h2>Our Range</h2>
       </div>
-    </section>
+      <div class="range-nav" role="group" aria-label="Show one type of tapware">
+      <button type="button" class="filter-btn" data-filter="basin-mixers" aria-pressed="false">Basin Mixers<span class="filter-count">28</span></button>
+      <button type="button" class="filter-btn" data-filter="wall-mixers" aria-pressed="false">Wall Mixers<span class="filter-count">28</span></button>
+      <button type="button" class="filter-btn" data-filter="spout-mixers" aria-pressed="false">Wall Mixers with Spout<span class="filter-count">28</span></button>
+      <button type="button" class="filter-btn" data-filter="spouts" aria-pressed="false">Spouts<span class="filter-count">28</span></button>
+      <button type="button" class="filter-btn" data-filter="kitchen-mixers" aria-pressed="false">Kitchen Mixers<span class="filter-count">28</span></button>
+    </div>
+    <div class="range-group" data-category="basin-mixers">
+      <h3 class="range-group-title">Rushy Tall Basin Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-rushy-chrome.webp" style="background-image:url('images/tbm-rushy-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Chrome Tall Basin Mixer</span><span class="colour-code">CH0149.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-rushy-black.webp" style="background-image:url('images/tbm-rushy-black-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Black Tall Basin Mixer</span><span class="colour-code">OX0149.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-rushy-brushed-nickel.webp" style="background-image:url('images/tbm-rushy-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Brushed Nickel Tall Basin Mixer</span><span class="colour-code">BU0149.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-rushy-brushed-yellow-gold.webp" style="background-image:url('images/tbm-rushy-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Series Brushed Yellow Gold Tall Basin Mixer</span><span class="colour-code">BUYG0149.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-rushy-brushed-gun-metal.webp" style="background-image:url('images/tbm-rushy-brushed-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Brushed Gun Metal Tall Basin Mixer</span><span class="colour-code">BUGM0149.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="basin-mixers">
+      <h3 class="range-group-title">Vog Tall Basin Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-chrome.webp" style="background-image:url('images/tbm-vog-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Chrome Tall Basin Mixer</span><span class="colour-code">CH0152.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-black.webp" style="background-image:url('images/tbm-vog-black-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Black Tall Basin Mixer</span><span class="colour-code">OX0152.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-brushed-nickel.webp" style="background-image:url('images/tbm-vog-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series Brushed Nickel Tall Basin Mixer</span><span class="colour-code">BU0152.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-brushed-yellow-gold.webp" style="background-image:url('images/tbm-vog-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Brushed Yellow Gold Tall Basin Mixer</span><span class="colour-code">BUYG0152.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-gun-metal-grey.webp" style="background-image:url('images/tbm-vog-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Gun Metal Grey Tall Basin Mixer</span><span class="colour-code">GM0152.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-vog-light-brushed-brass.webp" style="background-image:url('images/tbm-vog-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series Light Brushed Brass Tall Basin Mixer</span><span class="colour-code">LBG0152.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="basin-mixers">
+      <h3 class="range-group-title">Lucid Pin Tall Basin Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-chrome.webp" style="background-image:url('images/tbm-lucid-pin-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Chrome Tall Basin Mixer</span><span class="colour-code">CH0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-black.webp" style="background-image:url('images/tbm-lucid-pin-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Black Tall Basin Mixer</span><span class="colour-code">OX0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-brushed-nickel.webp" style="background-image:url('images/tbm-lucid-pin-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Brushed Nickel Tall Basin Mixer</span><span class="colour-code">BU0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-brushed-brass.webp" style="background-image:url('images/tbm-lucid-pin-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin &ndash; Brushed Brass Tall Basin Mixer</span><span class="colour-code">BUYG0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-brushed-gun-metal.webp" style="background-image:url('images/tbm-lucid-pin-brushed-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Brushed Gun Metal Tall Basin Mixer</span><span class="colour-code">BUGM0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-light-brushed-brass.webp" style="background-image:url('images/tbm-lucid-pin-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin &ndash; Light Brushed Brass Tall Basin Mixer</span><span class="colour-code">LBG0151.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-lucid-pin-brushed-copper.webp" style="background-image:url('images/tbm-lucid-pin-brushed-copper-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Brushed Copper Tall Basin Mixer</span><span class="colour-code">BUCP0151.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="basin-mixers">
+      <h3 class="range-group-title">Ivano Tall Basin Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-chrome.webp" style="background-image:url('images/tbm-ivano-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Chrome Tall Basin Mixer</span><span class="colour-code">CH0229.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-black.webp" style="background-image:url('images/tbm-ivano-black-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Black Tall Basin Mixer</span><span class="colour-code">OX0229.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-brushed-nickel.webp" style="background-image:url('images/tbm-ivano-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano &ndash; Brushed Nickel Tall Basin Mixer</span><span class="colour-code">BU0229.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-brushed-brass.webp" style="background-image:url('images/tbm-ivano-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Square Brushed Brass Tall Basin Mixer</span><span class="colour-code">BUYG0229.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-gun-metal.webp" style="background-image:url('images/tbm-ivano-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano &ndash; Gun Metal Tall Basin Mixer</span><span class="colour-code">GM0229.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-ivano-light-brushed-gold.webp" style="background-image:url('images/tbm-ivano-light-brushed-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano &ndash; Light Brushed Gold Tall Basin Mixer</span><span class="colour-code">LBG0229.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="basin-mixers">
+      <h3 class="range-group-title">Caddence Basin Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-caddence-brushed-nickel.webp" style="background-image:url('images/tbm-caddence-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Nickel Tall Basin Mixer</span><span class="colour-code">BU0241.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-caddence-brushed-yellow-gold.webp" style="background-image:url('images/tbm-caddence-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Yellow Gold Tall Basin Mixer</span><span class="colour-code">BUYG0241.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/tbm-caddence-brushed-gun-metal-grey.webp" style="background-image:url('images/tbm-caddence-brushed-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Gun Metal Grey Tall Basin Mixer</span><span class="colour-code">BUGM0241.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/bm-caddence-brushed-gunmetal.webp" style="background-image:url('images/bm-caddence-brushed-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Brushed Gunmetal Basin Mixer</span><span class="colour-code">BUGM0242.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Rushy Wall Mixer Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-rushy-chrome.webp" style="background-image:url('images/wm-rushy-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy CH0156-2.ST-NB Trim Kit (Match CLPM)</span><span class="colour-code">CH0156-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-rushy-brushed-nickel.webp" style="background-image:url('images/wm-rushy-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy BU0156-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">BU0156-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-rushy-brushed-yellow-gold.webp" style="background-image:url('images/wm-rushy-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy BUYG0156-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">BUYG0156-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-rushy-brushed-gun-metal.webp" style="background-image:url('images/wm-rushy-brushed-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy BUGM0156-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">BUGM0156-2.ST-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Vog Wall Mixer Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-vog-chrome.webp" style="background-image:url('images/wm-vog-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series CH0167-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">CH0167-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-vog-black.webp" style="background-image:url('images/wm-vog-black-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series OX0167-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">OX0167-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-vog-brushed-nickel.webp" style="background-image:url('images/wm-vog-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series BU0167-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">BU0167-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-vog-light-brushed-gold.webp" style="background-image:url('images/wm-vog-light-brushed-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series LBG0167-2.ST Trim Kit (Match CLPM)</span><span class="colour-code">LBG0167-2.ST-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Blaze Shower Wall Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-blaze-chrome.webp" style="background-image:url('images/wm-blaze-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Blaze Chrome Shower Wall Mixer (Color Up)</span><span class="colour-code">CH0106-2.ST</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Lucid Pin Wall Mixer Trim Kit 80mm</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-chrome.webp" style="background-image:url('images/wm-lucid-pin-80-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Chrome Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">CH0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-black.webp" style="background-image:url('images/wm-lucid-pin-80-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Black Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">OX0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-brushed-nickel.webp" style="background-image:url('images/wm-lucid-pin-80-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Brushed Nickel Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">BU0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-brushed-brass.webp" style="background-image:url('images/wm-lucid-pin-80-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Brushed Brass Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">BUYG0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-gun-metal.webp" style="background-image:url('images/wm-lucid-pin-80-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Gun Metal Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">GM0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-light-gold.webp" style="background-image:url('images/wm-lucid-pin-80-light-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Light Gold Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">LBG0126-2-80.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-80-brushed-copper.webp" style="background-image:url('images/wm-lucid-pin-80-brushed-copper-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Brushed Copper Wall Mixer with 80mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">BUCP0126-2-80.ST-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Lucid Pin Wall Mixer Trim Kit 65mm</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-65-chrome.webp" style="background-image:url('images/wm-lucid-pin-65-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Chrome 65mm Wall Mixer Trim Kit Only (Match CLPM)</span><span class="colour-code">CH0126-2-65.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-65-black.webp" style="background-image:url('images/wm-lucid-pin-65-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Black Wall Mixer with 65mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">OX0126-2-65.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-65-brushed-nickel.webp" style="background-image:url('images/wm-lucid-pin-65-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Brushed Nickel Wall Mixer Trim Kit with 65mm Cover Plate Only (Match CLPM)</span><span class="colour-code">BU0126-2-65.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-65-brushed-brass.webp" style="background-image:url('images/wm-lucid-pin-65-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Brushed Brass Wall Mixer with 65mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">BUYG0126-2-65.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-lucid-pin-65-gunmetal.webp" style="background-image:url('images/wm-lucid-pin-65-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Gunmetal Wall Mixer with 65mm Cover Plate Trim Kit Only (Match CLPM)</span><span class="colour-code">GM0126-2-65.ST-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Ivano Wall Mixer Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-ivano-brushed-nickel.webp" style="background-image:url('images/wm-ivano-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Brushed Nickel Wall Mixer Trim Kit (Match CLPM)</span><span class="colour-code">BU0226-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-ivano-brushed-yellow-gold.webp" style="background-image:url('images/wm-ivano-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Brushed Yellow Gold Wall Mixer Trim Kit (Match CLPM)</span><span class="colour-code">BUYG0226-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-ivano-light-brushed-gold.webp" style="background-image:url('images/wm-ivano-light-brushed-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Light Brushed Gold Wall Mixer Trim Kit (Match CLPM)</span><span class="colour-code">LBG0226-2.ST-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-ivano-gun-metal.webp" style="background-image:url('images/wm-ivano-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Gun Metal Wall Mixer Trim Kit (Match CLPM)</span><span class="colour-code">GM0226-2.ST-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="wall-mixers">
+      <h3 class="range-group-title">Caddence Wall Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-caddence-brushed-nickel.webp" style="background-image:url('images/wm-caddence-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Nickel Wall Mixer</span><span class="colour-code">BU0245.ST</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-caddence-brushed-yellow-gold.webp" style="background-image:url('images/wm-caddence-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Yellow Gold Wall Mixer</span><span class="colour-code">BUYG0245.ST</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/wm-caddence-brushed-gun-metal-grey.webp" style="background-image:url('images/wm-caddence-brushed-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Gun Metal Grey Wall Mixer</span><span class="colour-code">BUGM0245.ST</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Rushy Wall Mixer with Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-rushy-chrome.webp" style="background-image:url('images/sm-rushy-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Square Chrome Wall Mixer with Spout</span><span class="colour-code">CH0153.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-rushy-black.webp" style="background-image:url('images/sm-rushy-black-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Square Black Wall Mixer with Spout</span><span class="colour-code">OX0153-2-EX.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-rushy-brushed-nickel.webp" style="background-image:url('images/sm-rushy-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Square Brushed Nickel Wall Mixer with Spout</span><span class="colour-code">BU0153-2-EX.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-rushy-brushed-gun-metal.webp" style="background-image:url('images/sm-rushy-brushed-gun-metal-thumb.webp')"></div><figcaption><span class="swatch-name">Rushy Square Brushed Gun Metal Wall Mixer with Spout</span><span class="colour-code">BUGM0153-2-EX.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Vog Spout Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-chrome.webp" style="background-image:url('images/sm-vog-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Chrome Bathtub/Basin Wall Mixer with Spout (Color Up)</span><span class="colour-code">CH0158-2.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-black.webp" style="background-image:url('images/sm-vog-black-thumb.webp')"></div><figcaption><span class="swatch-name">Vog &ndash; Black Spout Mixer</span><span class="colour-code">OX0158-2.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-brushed-nickel.webp" style="background-image:url('images/sm-vog-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Vog &ndash; Brushed Nickel Spout Mixer</span><span class="colour-code">BU0158-2.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-brushed-brass.webp" style="background-image:url('images/sm-vog-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Vog &ndash; Brushed Brass Spout Mixer</span><span class="colour-code">BUYG0158-2.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-gunmetal.webp" style="background-image:url('images/sm-vog-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Vog &ndash; Gunmetal Spout Mixer</span><span class="colour-code">GM0158-2.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Vog Spout Mixer Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-kit-black.webp" style="background-image:url('images/sm-vog-kit-black-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series Black Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">OX0158-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-kit-brushed-nickel.webp" style="background-image:url('images/sm-vog-kit-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series BU0158-2.BM Trim Kit (Match CLPS)</span><span class="colour-code">BU0158-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-kit-brushed-yellow-gold.webp" style="background-image:url('images/sm-vog-kit-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series BUYG0158-2.BM Trim Kit (Match CLPS)</span><span class="colour-code">BUYG0158-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-kit-gunmetal.webp" style="background-image:url('images/sm-vog-kit-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Vog GM0158-2.BM Trim Kit (Match CLPS)</span><span class="colour-code">GM0158-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-vog-kit-light-brushed-brass.webp" style="background-image:url('images/sm-vog-kit-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Vog Series Light Brushed Brass Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">LBG0158-2.BM-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Blaze Wall Mixer with Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-blaze-chrome.webp" style="background-image:url('images/sm-blaze-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Blaze Chrome Bathtub/Basin Wall Mixer with Spout (Color Up) (Extension Part)</span><span class="colour-code">CH0113-2-EX.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Lucid Pin Spout Mixer Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-chrome.webp" style="background-image:url('images/sm-lucid-pin-kit-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Chrome Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">CH0144-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-black.webp" style="background-image:url('images/sm-lucid-pin-kit-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Black Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">OX0144-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-brushed-nickel.webp" style="background-image:url('images/sm-lucid-pin-kit-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Brushed Nickel Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">BU0144-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-brushed-brass.webp" style="background-image:url('images/sm-lucid-pin-kit-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Brushed Brass Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">BUYG0144-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-gunmetal.webp" style="background-image:url('images/sm-lucid-pin-kit-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Gunmetal Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">GM0144-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-lucid-pin-kit-brushed-copper.webp" style="background-image:url('images/sm-lucid-pin-kit-brushed-copper-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Brushed Copper Spout Mixer Trim Kit Only (Match CLPS)</span><span class="colour-code">BUCP0144-2.BM-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Ivano Spout Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-ivano-chrome.webp" style="background-image:url('images/sm-ivano-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano &ndash; Chrome Spout Mixer</span><span class="colour-code">CH0223-2.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-ivano-black.webp" style="background-image:url('images/sm-ivano-black-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano &ndash; Black Spout Mixer</span><span class="colour-code">OX0223-2-EX.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Ivano Wall Mixer with Spout Trim Kit</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-ivano-kit-chrome.webp" style="background-image:url('images/sm-ivano-kit-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Chrome Wall Mixer with Spout Trim Kit (Match CLPS)</span><span class="colour-code">CH0223-2.BM-NB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-ivano-kit-black.webp" style="background-image:url('images/sm-ivano-kit-black-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Black Wall Mixer with Spout Trim Kit (Match CLPS)</span><span class="colour-code">OX0223-2.BM-NB</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spout-mixers">
+      <h3 class="range-group-title">Caddence Wall Mixer with Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-caddence-brushed-nickel.webp" style="background-image:url('images/sm-caddence-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Nickel Wall Mixer with Spout</span><span class="colour-code">BU0243.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-caddence-brushed-yellow-gold.webp" style="background-image:url('images/sm-caddence-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Yellow Gold Wall Mixer with Spout</span><span class="colour-code">BUYG0243.BM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sm-caddence-brushed-gun-metal-grey.webp" style="background-image:url('images/sm-caddence-brushed-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Gun Metal Grey Wall Mixer with Spout</span><span class="colour-code">BUGM0243.BM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Blaze Wall Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-blaze-chrome.webp" style="background-image:url('images/sp-blaze-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Blaze Chrome Bathtub/Basin Wall Spout</span><span class="colour-code">CH0003.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-blaze-black.webp" style="background-image:url('images/sp-blaze-black-thumb.webp')"></div><figcaption><span class="swatch-name">Blaze Black Bath/Basin Wall Spout</span><span class="colour-code">OX0003.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-blaze-chrome-diverter.webp" style="background-image:url('images/sp-blaze-chrome-diverter-thumb.webp')"></div><figcaption><span class="swatch-name">Blaze Chrome Bathtub/Basin Wall Spout with Diverter</span><span class="colour-code">CH0011.BS</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Lucid Pin Wall Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-chrome.webp" style="background-image:url('images/sp-lucid-pin-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Round Chrome Bathtub/Basin Wall Spout</span><span class="colour-code">CH0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-matte-black.webp" style="background-image:url('images/sp-lucid-pin-matte-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Round Matte Black Bathtub/Basin Wall Spout</span><span class="colour-code">OX0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-brushed-nickel.webp" style="background-image:url('images/sp-lucid-pin-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Brushed Nickel Bathtub/Basin Wall Spout</span><span class="colour-code">BU0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-brushed-yellow-gold.webp" style="background-image:url('images/sp-lucid-pin-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Brushed Yellow Gold Bathtub/Basin Wall Spout</span><span class="colour-code">BUYG0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-gun-metal-grey.webp" style="background-image:url('images/sp-lucid-pin-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Series Round Gun Metal Grey Bathtub/Basin Wall Spout</span><span class="colour-code">GM0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-light-brushed-brass.webp" style="background-image:url('images/sp-lucid-pin-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin &ndash; Light Brushed Brass Spout</span><span class="colour-code">LBG0012-60.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-lucid-pin-brushed-copper.webp" style="background-image:url('images/sp-lucid-pin-brushed-copper-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin &ndash; Brushed Copper Brass Spout</span><span class="colour-code">BUCP0012-60.BS</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Lucid Pin Swivel Wall Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-swivel-chrome.webp" style="background-image:url('images/sp-swivel-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Round Chrome Bathtub/Basin Swivel Wall Spout</span><span class="colour-code">CH0004.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-swivel-black.webp" style="background-image:url('images/sp-swivel-black-thumb.webp')"></div><figcaption><span class="swatch-name">Lucid Pin Round Black Bathtub/Basin Swivel Wall Spout</span><span class="colour-code">OX0004.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-swivel-brushed-nickel.webp" style="background-image:url('images/sp-swivel-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Round Brushed Nickel Bathtub/Basin Swivel Wall Spout</span><span class="colour-code">BU0004.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-swivel-brushed-brass.webp" style="background-image:url('images/sp-swivel-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Round Brushed Brass Bathtub/Basin Swivel Wall Spout</span><span class="colour-code">LBG0004.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-swivel-gun-metal-grey.webp" style="background-image:url('images/sp-swivel-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Bathtub/Basin Swivel Wall Spout</span><span class="colour-code">GM0004.BS</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Cascade Waterfall Wall Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-cascade-chrome.webp" style="background-image:url('images/sp-cascade-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Cascade Series Chrome Waterfall Bathtub/Basin Wall Spout</span><span class="colour-code">CH0005.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-cascade-black.webp" style="background-image:url('images/sp-cascade-black-thumb.webp')"></div><figcaption><span class="swatch-name">Cascade Series Waterfall Black Bathtub/Basin Wall Spout</span><span class="colour-code">OX0005.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-cascade-brushed-nickel.webp" style="background-image:url('images/sp-cascade-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Waterfall Brushed Nickel Bathtub/Basin Wall Spout</span><span class="colour-code">BU0005.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-cascade-brushed-brass.webp" style="background-image:url('images/sp-cascade-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Waterfall Brushed Brass Waterfall Bathtub/Basin Wall Spout</span><span class="colour-code">BUYG0005.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-cascade-gun-metal-grey.webp" style="background-image:url('images/sp-cascade-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Waterfall Gun Metal Grey Bathtub/Basin Wall Spout</span><span class="colour-code">GM0005.BS</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Caddence Wall Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-caddence-brushed-nickel.webp" style="background-image:url('images/sp-caddence-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Nickel Bathtub/Basin Wall Spout</span><span class="colour-code">BU0246.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-caddence-brushed-yellow-gold.webp" style="background-image:url('images/sp-caddence-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Yellow Gold Bathtub/Basin Wall Spout</span><span class="colour-code">BUYG0246.BS</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-caddence-brushed-gun-metal-grey.webp" style="background-image:url('images/sp-caddence-brushed-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Caddence Series Brushed Gun Metal Grey Bathtub/Basin Wall Spout</span><span class="colour-code">BUGM0246.BS</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="spouts">
+      <h3 class="range-group-title">Norico Esperia Bath Spout</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-norico-chrome.webp" style="background-image:url('images/sp-norico-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Norico Esperia Chrome Bath Spout</span><span class="colour-code">SP10.01</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-norico-matte-black.webp" style="background-image:url('images/sp-norico-matte-black-thumb.webp')"></div><figcaption><span class="swatch-name">Norico Esperia Matte Black Bath Spout</span><span class="colour-code">SP10.02</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-norico-matte-black-chrome.webp" style="background-image:url('images/sp-norico-matte-black-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Norico Esperia Matte Black &amp; Chrome Bath Spout</span><span class="colour-code">SP10.03</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-norico-brushed-nickel.webp" style="background-image:url('images/sp-norico-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Norico Esperia Brushed Nickel Bath Spout</span><span class="colour-code">SP10.05</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/sp-norico-brushed-yellow-gold.webp" style="background-image:url('images/sp-norico-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Norico Esperia Brushed Yellow Gold Bath Spout</span><span class="colour-code">SP10.04</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Round Kitchen Sink Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-chrome.webp" style="background-image:url('images/km-round-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Round Chrome Standard Kitchen Sink Mixer Tap</span><span class="colour-code">CH1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-matt-black.webp" style="background-image:url('images/km-round-matt-black-thumb.webp')"></div><figcaption><span class="swatch-name">Round Matt Black Kitchen Sink Mixer Tap</span><span class="colour-code">OX1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-brushed-nickel.webp" style="background-image:url('images/km-round-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Round Brushed Nickel Kitchen Sink Mixer Tap</span><span class="colour-code">BU1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-brushed-yellow-gold.webp" style="background-image:url('images/km-round-brushed-yellow-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Round Brushed Yellow Gold Kitchen Sink Mixer Tap</span><span class="colour-code">BUYG1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-gun-metal-grey.webp" style="background-image:url('images/km-round-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Kitchen Sink Mixer Tap</span><span class="colour-code">GM1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-light-brushed-brass.webp" style="background-image:url('images/km-round-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Light Brushed Brass Standard Kitchen Mixer</span><span class="colour-code">LBG1026.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-round-brushed-copper.webp" style="background-image:url('images/km-round-brushed-copper-thumb.webp')"></div><figcaption><span class="swatch-name">Brushed Copper Kitchen Mixer</span><span class="colour-code">BUCP1026.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Round Pull Out Kitchen Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-chrome.webp" style="background-image:url('images/km-pullout-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Round Chrome Pull Out Kitchen Sink Mixer Tap</span><span class="colour-code">CH1021.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-black.webp" style="background-image:url('images/km-pullout-black-thumb.webp')"></div><figcaption><span class="swatch-name">Round Black Pull Out Kitchen Sink Mixer Tap</span><span class="colour-code">OX1021.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-brushed-nickel.webp" style="background-image:url('images/km-pullout-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Round Brushed Nickel Pull Out Kitchen Sink Mixer Tap</span><span class="colour-code">BU1021.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-brushed-brass.webp" style="background-image:url('images/km-pullout-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Brushed Brass Pull Out Kitchen Mixer</span><span class="colour-code">BUYG1021.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-gun-metal-grey.webp" style="background-image:url('images/km-pullout-gun-metal-grey-thumb.webp')"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Pull Out Kitchen Sink Mixer Tap</span><span class="colour-code">GM1021.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-pullout-light-brushed-brass.webp" style="background-image:url('images/km-pullout-light-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Light Brushed Brass Pull Out Kitchen Mixer</span><span class="colour-code">LBG1021.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Standard Kitchen Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-standard-chrome.webp" style="background-image:url('images/km-standard-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Chrome Standard Kitchen Mixer</span><span class="colour-code">CH1007.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-standard-black.webp" style="background-image:url('images/km-standard-black-thumb.webp')"></div><figcaption><span class="swatch-name">Black Standard Kitchen Mixer</span><span class="colour-code">OX1007.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-standard-brushed-nickel.webp" style="background-image:url('images/km-standard-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Brushed Nickel Standard Kitchen Mixer</span><span class="colour-code">BU1007.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-standard-brushed-brass.webp" style="background-image:url('images/km-standard-brushed-brass-thumb.webp')"></div><figcaption><span class="swatch-name">Brushed Brass Standard Kitchen Mixer</span><span class="colour-code">BUYG1007.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-standard-gunmetal.webp" style="background-image:url('images/km-standard-gunmetal-thumb.webp')"></div><figcaption><span class="swatch-name">Gunmetal Standard Kitchen Mixer</span><span class="colour-code">GM1007.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Swivel Spout Kitchen Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-swivel-chrome.webp" style="background-image:url('images/km-swivel-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Electroplated Brass Chrome Swivel Spout Kitchen Mixer Tap</span><span class="colour-code">CH1027.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-swivel-matte-black.webp" style="background-image:url('images/km-swivel-matte-black-thumb.webp')"></div><figcaption><span class="swatch-name">Electroplated Brass Matte Black Swivel Spout Kitchen Mixer Tap</span><span class="colour-code">OX1027.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Kitchen Sink Mixer Tap</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-square-chrome.webp" style="background-image:url('images/km-square-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Chrome Kitchen Sink Mixer Tap</span><span class="colour-code">CH1010.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-square-black.webp" style="background-image:url('images/km-square-black-thumb.webp')"></div><figcaption><span class="swatch-name">Black Kitchen Sink Mixer Tap</span><span class="colour-code">OX1010.KM</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-classic-chrome.webp" style="background-image:url('images/km-classic-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Chrome Standard Kitchen Mixer Tap</span><span class="colour-code">CH1003.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Ivano Kitchen Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-ivano-chrome.webp" style="background-image:url('images/km-ivano-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Ivano Series Chrome Kitchen Mixer</span><span class="colour-code">CH0228.KM</span></figcaption></figure>
+      </div>
+    </div>
+    <div class="range-group" data-category="kitchen-mixers">
+      <h3 class="range-group-title">Carysil Slim Pull Out Kitchen Mixer</h3>
+      <div class="colour-grid">
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-carysil-chrome.webp" style="background-image:url('images/km-carysil-chrome-thumb.webp')"></div><figcaption><span class="swatch-name">Carysil Slim Chrome Pull Out Kitchen Mixer</span><span class="colour-code">C-1SKMC</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-carysil-matte-black.webp" style="background-image:url('images/km-carysil-matte-black-thumb.webp')"></div><figcaption><span class="swatch-name">Carysil Slim Matte Black Pull Out Kitchen Mixer</span><span class="colour-code">C-1SKMB</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-carysil-brushed-nickel.webp" style="background-image:url('images/km-carysil-brushed-nickel-thumb.webp')"></div><figcaption><span class="swatch-name">Carysil Slim Brushed Nickel Pull Out Kitchen Mixer</span><span class="colour-code">C-1SKMBN</span></figcaption></figure>
+        <figure class="colour-swatch"><div class="colour-img" data-full="images/km-carysil-brushed-gold.webp" style="background-image:url('images/km-carysil-brushed-gold-thumb.webp')"></div><figcaption><span class="swatch-name">Carysil Slim Brushed Gold Pull Out Kitchen Mixer</span><span class="colour-code">C-1SKMBG</span></figcaption></figure>
+      </div>
+    </div>
+    </div>
+  </section>
+
+</main>
+
+  <section class="cta-band section">
+    <div class="cta-band-media" aria-hidden="true">
+      <img src="images/cta-bathroom.webp" alt="" width="1448" height="1086" loading="lazy" decoding="async">
+    </div>
+    <div class="container">
+      <div class="cta-inner">
+        <div data-reveal="up">
+          <span class="eyebrow">Free quote</span>
+          <h2>Request a free <em>quote today.</em></h2>
+          <p>Speak with our experienced team about your next project.</p>
+          <p class="cta-action"><a class="btn btn-brass" href="quote.html">Contact us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/multi-logo-footer.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328" loading="lazy">
+          </a>
+          <p class="footer-blurb">Australia's complete building and renovation supply centre. Wholesale and retail flooring, bathrooms, kitchens, tiles and tapware.</p>
+          <div class="footer-social">
+            <a class="soc soc-fb" href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Multistock on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+            <a class="soc soc-ig" href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Multistock on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad" x1="10%" y1="100%" x2="90%" y2="0%"><stop offset="0%" stop-color="#FFD521"/><stop offset="26%" stop-color="#F50000"/><stop offset="62%" stop-color="#B900B4"/><stop offset="100%" stop-color="#4C68D7"/></linearGradient></defs><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="flooring.html">Flooring</a></li>
+            <li><a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a></li>
+            <li><a href="carpet.html">Carpet</a></li>
+            <li><a href="tiles.html">Tiles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quote.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bathroom &amp; kitchen</h4>
+          <ul>
+            <li><a href="showers.html">Showers</a></li>
+            <li><a href="toilets.html">Toilets</a></li>
+            <li><a href="baths.html">Baths</a></li>
+            <li><a href="tapware.html">Tapware</a></li>
+            <li><a href="vanity.html">Vanity</a></li>
+            <li><a href="kitchen-sinks.html">Kitchen Sinks</a></li>
+            <li><a href="bathroom-sinks.html">Basins</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="shaving-cabinets.html">Shaving Cabinets</a></li>
+            <li><a href="carysil-tapware.html">Carysil Tapware</a></li>
+            <li><a href="appliances.html">Appliances</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:0422968688"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span>0422 968 688</span></a></li>
+            <li><a href="mailto:sales@multistock.com.au"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><span>sales@multistock.com.au</span></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span>2/25 Grant Road<br>Somerville Vic 3912</span></a></li>
+          </ul>
+          <div class="footer-hours">
+            <strong>Opening hours</strong>
+            <dl>
+              <div><dt>Mon &ndash; Thu</dt><dd>8:30am &ndash; 5:30pm</dd></div>
+              <div><dt>Fri</dt><dd>8:30am &ndash; 4:30pm</dd></div>
+              <div class="is-closed"><dt>Sat &ndash; Sun</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Multistock Building Resources Pty Ltd
+          <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
+        </span>
+        <span>Wholesale &amp; retail &mdash; trade accounts available, public welcome</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-btn lightbox-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img alt="" decoding="async">
+      <figcaption class="lightbox-meta">
+        <span><em></em><br><strong></strong></span>
+        <span class="lightbox-counter"></span>
+      </figcaption>
+      <div class="lightbox-strip" role="tablist" aria-label="Choose an image"></div>
+    </figure>
   </div>
 
-  <!-- Range -->
-  <section class="feature-boxes">
-    <h2 class="colours-title">OUR RANGE</h2>
-    <div class="colour-grid colour-grid-lg">
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-chrome-v3.webp" style="background-image:url('images/tap-chrome-thumb-v3.webp');background-size:contain;background-color:#fff"></div><figcaption>Lucid Pin Series Round Chrome Basin Mixer</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-nickel-v3.webp" style="background-image:url('images/tap-nickel-thumb-v3.webp');background-size:contain;background-color:#fff"></div><figcaption>Lucid Pin Series Round Brushed Nickel Basin</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-matteblack-v3.webp" style="background-image:url('images/tap-matteblack-thumb-v3.webp');background-size:contain;background-color:#fff"></div><figcaption>Lucid Pin Series Round Matte Black</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-vog-chrome-v2.webp" style="background-image:url('images/tap-vog-chrome-thumb-v2.webp');background-size:contain;background-color:#fff"></div><figcaption>Vog Chrome Basin Mixer</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-vog-black-v2.webp" style="background-image:url('images/tap-vog-black-thumb-v2.webp');background-size:contain;background-color:#fff"></div><figcaption>Vog Black Basin Mixer</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/tap-vog-nickel-v2.webp" style="background-image:url('images/tap-vog-nickel-thumb-v2.webp');background-size:contain;background-color:#fff"></div><figcaption>Vog Brushed Nickel Basin Mixer</figcaption></figure>
-    </div>
-  </section>
+  <button type="button" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="colour-lightbox">
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close zoomed view">&times;</button>
-    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
-    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">›</button>
-    <img id="lightbox-img" src="" alt="Tapware — zoomed view">
+  <div class="mobile-cta">
+    <a class="btn btn-brass" href="tel:0422968688">Call us</a>
+    <a class="btn btn-light" href="quote.html">Contact us</a>
   </div>
 
-  <!-- Quote banner -->
-  <section class="quote-banner">
-    <div class="quote-left">
-      <img src="images/multi-logo-web.png" class="quote-icon-img" alt="Multistock Building Resources Pty Ltd">
-      <div>
-        <h3>REQUEST A FREE QUOTE TODAY</h3>
-        <p>Speak with our experienced team about your next project.</p>
-      </div>
-    </div>
-    <a href="quote.html" class="btn btn-quote">REQUEST A QUOTE ›</a>
-  </section>
-
-  <!-- Info row -->
-  <section class="info-row">
-    <div class="footer-cols">
-      <div class="footer-contact-col">
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2.25c-3.87 0-7 3.02-7 6.75 0 4.94 6.02 11.53 6.28 11.81a.98.98 0 0 0 1.44 0C13.98 20.53 20 13.94 20 9c0-3.73-3.13-6.75-7-6.75Z" fill="#e2574c"/>
-            <circle cx="12" cy="9" r="2.55" fill="#4d4d4d"/>
-          </svg>
-          <div>
-            <h4>VISIT OUR SHOWROOM</h4>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener">2/25 Grant Road, Somerville Vic 3912</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#3d87cc"/>
-            <g fill="none" stroke="#333333" stroke-width="1.3">
-              <line x1="12" y1="2.7" x2="12" y2="21.3"/>
-              <ellipse cx="12" cy="12" rx="4.5" ry="9.3"/>
-              <line x1="2.7" y1="12" x2="21.3" y2="12"/>
-              <line x1="4.4" y1="7.4" x2="19.6" y2="7.4"/>
-              <line x1="4.4" y1="16.6" x2="19.6" y2="16.6"/>
-            </g>
-          </svg>
-          <div>
-            <h4>WHOLESALE &amp; RETAIL</h4>
-            <p>Trade accounts available. Public welcome</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6.4 3.5H9c.5 0 .9.35 1 .84l.86 4.02c.08.4-.05.8-.34 1.07l-1.7 1.6a13.6 13.6 0 0 0 5.15 5.15l1.6-1.7c.27-.29.68-.42 1.07-.34l4.02.86c.49.11.84.5.84 1V19c0 .83-.67 1.5-1.5 1.5C10.9 20.5 3.5 13.1 3.5 5A1.5 1.5 0 0 1 5 3.5Z" fill="#3fa35a"/>
-          </svg>
-          <div>
-            <h4>CALL US</h4>
-            <p><a href="tel:0422968688">0422 968 688</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2.5" y="5" width="19" height="14" rx="2.6" fill="#ffffff"/>
-            <path d="M3.6 7.3 12 12.9 20.4 7.3" fill="none" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>EMAIL US</h4>
-            <p><a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#7a6fce"/>
-            <path d="M12 6.6V12l3.7 2.2" fill="none" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>OPENING HOURS</h4>
-            <p>Mon - Thu: 8:30am - 5:30pm<br>Fri: 8:30am - 4:30pm<br>Sat - Sun: Closed</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Multistock Building Resources Pty Ltd
-      <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
-    </div>
-  </section>
-
-<script>
-  var toggle = document.getElementById('nav-toggle');
-  var nav = document.getElementById('main-nav');
-  toggle.addEventListener('click', function () {
-    var isOpen = nav.classList.toggle('open');
-    toggle.classList.toggle('open', isOpen);
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  var colourLightbox = document.getElementById('colour-lightbox');
-  var lightboxImg = document.getElementById('lightbox-img');
-  var lightboxClose = document.getElementById('lightbox-close');
-  var lightboxPrev = document.getElementById('lightbox-prev');
-  var lightboxNext = document.getElementById('lightbox-next');
-  var colourFulls = [].map.call(document.querySelectorAll('.colour-img'), function (el) { return el.dataset.full; }).filter(Boolean);
-  var colourIndex = 0;
-  function showColour(i) {
-    if (!colourFulls.length) return;
-    colourIndex = (i + colourFulls.length) % colourFulls.length;
-    lightboxImg.src = colourFulls[colourIndex];
-  }
-  function closeColourLightbox() { colourLightbox.classList.remove('open'); }
-  document.querySelectorAll('.colour-img').forEach(function (swatch) {
-    swatch.addEventListener('click', function () {
-      var full = swatch.dataset.full;
-      if (!full) return;
-      colourIndex = colourFulls.indexOf(full);
-      lightboxImg.src = full;
-      colourLightbox.classList.add('open');
-    });
-  });
-  colourLightbox.addEventListener('click', closeColourLightbox);
-  lightboxClose.addEventListener('click', function (event) { event.stopPropagation(); closeColourLightbox(); });
-  lightboxPrev.addEventListener('click', function (event) { event.stopPropagation(); showColour(colourIndex - 1); });
-  lightboxNext.addEventListener('click', function (event) { event.stopPropagation(); showColour(colourIndex + 1); });
-  document.addEventListener('keydown', function (event) {
-    if (!colourLightbox.classList.contains('open')) return;
-    if (event.key === 'Escape') closeColourLightbox();
-    else if (event.key === 'ArrowLeft') showColour(colourIndex - 1);
-    else if (event.key === 'ArrowRight') showColour(colourIndex + 1);
-  });
-</script>
+<script src="js/motion.min.js"></script>
+<script src="js/site.js?v=665"></script>
+<script src="js/fx.js?v=665"></script>
 </body>
 </html>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-AU" class="no-js">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Showers | Multistock Building Resources Pty Ltd</title>
 <meta name="description" content="Rail, overhead and handheld showers to suit every bathroom. Visit our Somerville showroom to view the range.">
 <link rel="canonical" href="https://multistock.com.au/showers.html">
@@ -13,216 +13,431 @@
 <meta property="og:url" content="https://multistock.com.au/showers.html">
 <meta property="og:image" content="https://multistock.com.au/images/bathroomware-main.webp">
 <meta property="og:locale" content="en_AU">
+<meta name="theme-color" content="#060B33">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=161">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="images/showers-hero-4.webp" fetchpriority="high">
+<link rel="stylesheet" href="site.css?v=665">
 </head>
-<body>
+<body class="has-hero">
+<a class="skip-link" href="#main">Skip to content</a>
 
-  <!-- Header / nav -->
-  <header class="header">
-    <div class="logo">
-      <a href="index.html"><img src="images/multi-logo-web.png" class="logo-img" alt="Multistock Building Resources Pty Ltd"></a>
-    </div>
-    <div class="nav-wrap">
-      <nav class="nav" id="main-nav">
-        <a href="index.html">HOME</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container container-wide header-inner">
+      <a class="brand" href="index.html" aria-label="Multistock Building Resources — home">
+        <img class="logo-dark" src="images/web/multi-logo-web.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328">
+        <img class="logo-light" src="images/web/multi-logo-white.webp" alt="" aria-hidden="true" width="1000" height="328">
+      </a>
+
+      <nav class="nav" id="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
         <div class="nav-dd">
-          <a href="#" class="nav-dd-toggle">PRODUCTS ▾</a>
-          <div class="nav-dd-menu">
-            <a href="flooring.html">Flooring</a>
-            <a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a>
-            <a href="carpet.html">Carpet</a>
-            <a href="tiles.html">Tiles</a>
+          <button type="button" aria-expanded="false">Products
+            <svg viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1.5 6 6.5l5-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </button>
+          <div class="nav-dd-menu is-mega">
+            <a class="mega-item" href="flooring.html"><img src="images/web/menu-flooring-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Flooring</b><span>Stone composite, acoustic LVP and engineered hardwood</span></span></a>
+            <a class="mega-item" href="bathrooms.html"><img src="images/web/menu-bathroomware-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Bathroom Ware &amp; Kitchen Ware</b><span>Vanities, showers, toilets, baths and tapware</span></span></a>
+            <a class="mega-item" href="carpet.html"><img src="images/web/menu-carpet-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Carpet</b><span>Plush, durable and stain-resistant carpet</span></span></a>
+            <a class="mega-item" href="tiles.html"><img src="images/web/menu-tiles-card-3.webp" alt="" loading="lazy" decoding="async"><span><b>Tiles</b><span>Floor, wall, outdoor, mosaic and natural stone</span></span></a>
+            <div class="mega-foot">
+              <span>Trade accounts available. Public welcome.</span>
+              <a href="products.html">View all products &rarr;</a>
+            </div>
           </div>
         </div>
-        <a href="gallery.html">GALLERY</a>
-        <a href="quote.html">CONTACT</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="projects-management.html">Projects / Management</a>
+        <a href="quote.html">Contact</a>
       </nav>
-      <div class="header-right">
-        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-nav">
+
+      <div class="header-actions">
+        <a class="header-phone" href="tel:0422968688" aria-label="Call Multistock on 0422 968 688">
+          <svg viewBox="0 0 24 24" aria-hidden="true" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h3l1.5 4.5-2 1.5a12 12 0 0 0 5.5 5.5l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16.5 16.5 0 0 1 4.5 5.5a2 2 0 0 1 2-2z"/></svg><span>0422 968 688</span>
+        </a>
+        <a class="btn btn-sm" href="quote.html">Contact us
+          <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
           <span></span><span></span><span></span>
         </button>
       </div>
     </div>
   </header>
 
-  <!-- Page banner -->
-  <div class="page-banner-wrap">
-    <section class="page-banner gallery-banner">
-      <div class="page-banner-content">
-        <a href="bathrooms.html" class="back-link" onclick="if(document.referrer){history.back();return false;}"><span class="back-arrow">‹</span> Back</a>
-        <span class="banner-eyebrow">Bathrooms</span>
-        <h1>SHOWERS</h1>
-        <span class="banner-divider" aria-hidden="true"></span>
-        <p class="banner-lead">Rail, overhead and handheld showers to suit every bathroom and budget.</p>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-nav-links">
+      <a href="index.html">Home<span>01</span></a>
+      <a href="products.html">All Products<span>02</span></a>
+      <a href="flooring.html">Flooring<span>03</span></a>
+      <a href="bathrooms.html">Bathroom &amp; Kitchen Ware<span>04</span></a>
+      <a href="carpet.html">Carpet<span>05</span></a>
+      <a href="tiles.html">Tiles<span>06</span></a>
+      <a href="gallery.html">Gallery<span>07</span></a>
+      <a href="projects-management.html">Projects / Management<span>08</span></a>
+      <a href="quote.html">Contact<span>09</span></a>
+    </div>
+    <div class="mobile-nav-foot">
+      <p><a href="tel:0422968688">0422 968 688</a><br>
+      <a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a><br>
+      2/25 Grant Road, Somerville Vic 3912</p>
+    </div>
+  </div>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="hero-media">
+      <img src="images/showers-hero-4.webp" alt="" fetchpriority="high" data-parallax="14" data-parallax-scale="1">
+    </div>
+    <div class="container container-wide page-hero-body">
+      <a class="back-btn" href="bathrooms.html" data-back><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M9.5 3.5 5 8l4.5 4.5"/></svg>Back</a>
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span aria-hidden="true">/</span><a href="bathrooms.html">Bathrooms</a><span aria-hidden="true">/</span><span>Showers</span>
+      </nav>
+      <h1 data-split>Showers</h1>
+      <p class="lead" data-reveal="up" data-delay="0.1">Rail, overhead and handheld showers to suit every bathroom and budget.</p>
+    </div>
+  </section>
+
+  <section class="section-sm">
+    <div class="container">
+      <div class="intro-copy" data-reveal="up">
+        <span class="eyebrow">Bathrooms</span>
         <p>Multistock stocks a complete range of showers — from sleek rail showers through to luxurious overhead rain and versatile handheld designs. Browse the styles below, or get in touch with our team for expert advice on the right shower for your space.</p>
         <p>Our showers pair quality brassware with durable finishes and water-efficient WELS-rated heads, in a range of styles to match any bathroom.</p>
         <p>Please feel free to visit our Somerville showroom to view these showers in person.</p>
+        <div class="intro-actions">
+          <a class="btn" href="quote.html">Contact us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a>
+          <a class="link-underline" href="tel:0422968688">Call 0422 968 688 <span aria-hidden="true">&rarr;</span></a>
+        </div>
       </div>
-      <div class="banner-split" aria-hidden="true">
-        <div class="banner-half" style="background-image:url('images/shower-hero-large.webp')"></div>
+    </div>
+  </section>
+
+  <section class="section bg-warm" id="range">
+    <div class="container container-wide">
+      <div class="section-head" data-reveal="up" style="margin-bottom:clamp(28px,3vw,44px)">
+        <span class="eyebrow">Showers</span>
+        <h2>Our Range</h2>
       </div>
-    </section>
+            <div class="range-nav" role="group" aria-label="Show one type of product">
+        <button type="button" class="filter-btn" data-filter="shower-stations" aria-pressed="false">Shower Stations<span class="filter-count">16</span></button>
+        <button type="button" class="filter-btn" data-filter="shower-rails" aria-pressed="false">Shower Rails<span class="filter-count">45</span></button>
+        <button type="button" class="filter-btn" data-filter="shower-heads" aria-pressed="false">Shower Heads<span class="filter-count">33</span></button>
+        <button type="button" class="filter-btn" data-filter="handheld-showers" aria-pressed="false">Handheld Showers<span class="filter-count">27</span></button>
+        <button type="button" class="filter-btn" data-filter="shower-arms" aria-pressed="false">Shower Arms<span class="filter-count">48</span></button>
+        <button type="button" class="filter-btn" data-filter="shower-hoses" aria-pressed="false">Shower Hoses<span class="filter-count">11</span></button>
+      </div>
+      <div class="colour-grid">
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-square-chrome.webp" style="background-image:url('images/shower-square-chrome-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Square Chrome Shower Station Top Water Inlet</span><span class="colour-code">Code: CH2130-0002-S8.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-square-black.webp" style="background-image:url('images/shower-square-black-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Square Black Shower Station Top Water Inlet</span><span class="colour-code">Code: OX2130-0002-S8.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-square-nickel.webp" style="background-image:url('images/shower-square-nickel-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Square Brushed Nickel Shower Station Top Water Inlet</span><span class="colour-code">Code: BU2130.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-round-nickel.webp" style="background-image:url('images/shower-round-nickel-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Round Brushed Nickel Shower Station Top Water Inlet (Right Angle)</span><span class="colour-code">Code: BU2128-A.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-round-chrome-2.webp" style="background-image:url('images/shower-round-chrome-2-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Chrome Shower Station</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-round-black-2.webp" style="background-image:url('images/shower-round-black-2-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Round Black Shower Station Top Inlet</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2130-sh-10.webp" style="background-image:url('images/shower-buyg2130-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Square Brushed Yellow Gold Shower Station Top Water Inlet</span><span class="colour-code">Code: BUYG2130.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm2130-sh-10.webp" style="background-image:url('images/shower-gm2130-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Square Gun Metal Grey Shower Station Top Water Inlet</span><span class="colour-code">Code: GM2130.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg2130-sh-10.webp" style="background-image:url('images/shower-lbg2130-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Light Brushed Brass Shower Station</span><span class="colour-code">Code: LBG2130.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm2128-a-sh-10.webp" style="background-image:url('images/shower-gm2128-a-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Round Gun Metal Grey Shower Station Top Water Inlet (Right Angle)</span><span class="colour-code">Code: GM2128-A.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2128-a-sh-10.webp" style="background-image:url('images/shower-buyg2128-a-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Round Brushed Yellow Gold Shower Station Top Water Inlet (Right Angle)</span><span class="colour-code">Code: BUYG2128-A.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg2128-a-sh-10.webp" style="background-image:url('images/shower-lbg2128-a-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Light Brushed Brass Shower Station</span><span class="colour-code">Code: LBG2128-A.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-10-round-chrome-shower-station-top-water-inlet.webp" style="background-image:url('images/shower-10-round-chrome-shower-station-top-water-inlet-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Round Chrome Shower Station Top Water Inlet</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-10-chrome-shower-station.webp" style="background-image:url('images/shower-10-chrome-shower-station-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Chrome Shower Station</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-10-black-shower-station.webp" style="background-image:url('images/shower-10-black-shower-station-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Black Shower Station</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-stations" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bucp2128-a-sh-10.webp" style="background-image:url('images/shower-bucp2128-a-sh-10-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">10&quot; Brushed Copper Shower Station</span><span class="colour-code">Code: BUCP2128-A.SH-10</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2127-sh.webp" style="background-image:url('images/shower-buyg2127-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Brass Shower Rail with Handheld Shower (Stainless Steel Hose)</span><span class="colour-code">Code: BUYG2127.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-round-gun-metal-grey-shower-rail-with-handheld-sho.webp" style="background-image:url('images/shower-round-gun-metal-grey-shower-rail-with-handheld-sho-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Shower Rail with Handheld Shower (Stainless Steel Hose)</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2131-sh.webp" style="background-image:url('images/shower-buyg2131-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Shower Rail with Handheld Shower (Stainless Steel Hose)</span><span class="colour-code">Code: BUYG2131.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu2131-sh.webp" style="background-image:url('images/shower-bu2131-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Shower Rail with Handheld Shower (Stainless Steel Hose)</span><span class="colour-code">Code: BU2131.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg2131-sh.webp" style="background-image:url('images/shower-lbg2131-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Light Brushed Brass Shower Rail with Handheld Shower</span><span class="colour-code">Code: LBG2131.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bucp2131-sh.webp" style="background-image:url('images/shower-bucp2131-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Copper Shower Rail with Handheld Shower</span><span class="colour-code">Code: BUCP2131.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2149-sh-n-ch-s8-hhs.webp" style="background-image:url('images/shower-ch2149-sh-n-ch-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Sliding Shower Rail with 3 Mode Handheld Shower Wall Connector Set</span><span class="colour-code">Code: CH2149.SH.N+CH-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2149-sh-n-ox-s8-hhs.webp" style="background-image:url('images/shower-ox2149-sh-n-ox-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Sliding Shower Rail with 3 Mode Handheld Shower Wall Connector Set</span><span class="colour-code">Code: OX2149.SH.N+OX-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm2149-sh-n.webp" style="background-image:url('images/shower-gm2149-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Sliding Shower Rail without handheld Shower (PVC Hose)</span><span class="colour-code">Code: GM2149.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2149-sh-n.webp" style="background-image:url('images/shower-buyg2149-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Brass Sliding Shower Rail without handheld Shower (PVC Hose)</span><span class="colour-code">Code: BUYG2149.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2147-1-sh-n.webp" style="background-image:url('images/shower-ox2147-1-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Black Shower Rail with Handheld Shower</span><span class="colour-code">Code: OX2147-1.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu2147-1-sh.webp" style="background-image:url('images/shower-bu2147-1-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Nickel Shower Rail with Handheld Shower</span><span class="colour-code">Code: BU2147-1.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2147-1-sh.webp" style="background-image:url('images/shower-buyg2147-1-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Wall Mounted Sliding Rail with Water Hose &amp; Wall Connector Only</span><span class="colour-code">Code: BUYG2147-1.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm2147-1-sh.webp" style="background-image:url('images/shower-gm2147-1-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Stainless Steel Rail with Handheld Shower, Fixed Wall Connector Set</span><span class="colour-code">Code: GM2147-1.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg2147-1-sh.webp" style="background-image:url('images/shower-lbg2147-1-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Light Brushed Brass Shower Rail with Handheld Shower</span><span class="colour-code">Code: LBG2147-1.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-chrome-shower-rail-with-handheld-shower.webp" style="background-image:url('images/shower-chrome-shower-rail-with-handheld-shower-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Shower Rail with Handheld Shower</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2147-1-sh-n.webp" style="background-image:url('images/shower-ch2147-1-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Shower Rail</span><span class="colour-code">Code: CH2147-1.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ch2138-sh-n.webp" style="background-image:url('images/shower-ch2138-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">300mm Height Round Chrome Top Water Inlet Shower Rail</span><span class="colour-code">Code: CH2138.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ox2138-sh-n.webp" style="background-image:url('images/shower-ox2138-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Round Black Top Water Inlet Shower Rail</span><span class="colour-code">Code: OX2138.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ch2128-a-sh-n.webp" style="background-image:url('images/shower-ch2128-a-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Right Angle Round Chrome Top Inlet Shower Rail</span><span class="colour-code">Code: CH2128-A.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ox2128-a-sh-n.webp" style="background-image:url('images/shower-ox2128-a-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Right Angle Round Matte Black Top Inlet Shower Rail</span><span class="colour-code">Code: OX2128-A.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-round-black-top-inlet-shower-rail.webp" style="background-image:url('images/shower-round-black-top-inlet-shower-rail-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Round Black Top Inlet Shower Rail</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2150-sh-n.webp" style="background-image:url('images/shower-ch2150-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Square Shower Station without Shower Head and Handheld Shower(Wide Rail)</span><span class="colour-code">Code: CH2150.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2150-sh-n.webp" style="background-image:url('images/shower-ox2150-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Black Square Shower Station without Shower Head and Handheld Shower(Wide Rail)</span><span class="colour-code">Code: OX2150.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2149-sh-n.webp" style="background-image:url('images/shower-ch2149-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Sliding Shower Rail without Handheld Shower</span><span class="colour-code">Code: CH2149.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2149-sh-n.webp" style="background-image:url('images/shower-ox2149-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Sliding Shower Rail without Handheld Shower (PVC Hose)</span><span class="colour-code">Code: OX2149.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2145-sh-n.webp" style="background-image:url('images/shower-ch2145-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Wall Mounted Sliding Rail with Water Hose &amp; Wall Connector Only</span><span class="colour-code">Code: CH2145.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2145-sh-n.webp" style="background-image:url('images/shower-ox2145-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Wall Mounted Sliding Rail with Water Hose &amp; Wall Connector Only</span><span class="colour-code">Code: OX2145.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2127-sh-n.webp" style="background-image:url('images/shower-ox2127-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Shower Holder Wall Connector &amp; Hose Only</span><span class="colour-code">Code: OX2127.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2127-sh-n.webp" style="background-image:url('images/shower-ch2127-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Shower Holder Wall Connector &amp; Hose Only</span><span class="colour-code">Code: CH2127.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm2127-sh-n.webp" style="background-image:url('images/shower-gm2127-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Shower Holder Wall Connector &amp; Hose Only</span><span class="colour-code">Code: GM2127.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu2127-sh-n.webp" style="background-image:url('images/shower-bu2127-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Shower Holder Wall Connector &amp; Hose Only</span><span class="colour-code">Code: BU2127.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2131-sh-n.webp" style="background-image:url('images/shower-ch2131-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Hand held Shower Bracket Holder</span><span class="colour-code">Code: CH2131.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2131-sh-n.webp" style="background-image:url('images/shower-ox2131-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Hand held Shower Bracket Holder</span><span class="colour-code">Code: OX2131.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ox2140-sh-n.webp" style="background-image:url('images/shower-ox2140-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Square Matte Black Half Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: OX2140.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ch2140-sh-n.webp" style="background-image:url('images/shower-ch2140-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Square Chrome Half Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: CH2140.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2130-sh-n.webp" style="background-image:url('images/shower-ch2130-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Square Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: CH2130.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2130-sh-n.webp" style="background-image:url('images/shower-ox2130-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: OX2130.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2125-sh-n.webp" style="background-image:url('images/shower-ch2125-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: CH2125.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img" data-full="images/shower-ox2125-sh-n.webp" style="background-image:url('images/shower-ox2125-sh-n-thumb.webp');aspect-ratio:600 / 450"></div><figcaption><span class="swatch-name">Square Black Shower Station without Shower Head and Handheld Shower</span><span class="colour-code">Code: OX2125.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox2146-sh-n.webp" style="background-image:url('images/shower-ox2146-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Hand held Shower Rail</span><span class="colour-code">Code: OX2146.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg2151-sh-n.webp" style="background-image:url('images/shower-buyg2151-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">CADDENCE Series Brushed Yellow Gold Shower Rail without Handheld Shower</span><span class="colour-code">Code: BUYG2151.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu2151-sh-n.webp" style="background-image:url('images/shower-bu2151-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">CADDENCE Series Brushed Nickel Shower Rail without Handheld Shower</span><span class="colour-code">Code: BU2151.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bugm2151-sh-n.webp" style="background-image:url('images/shower-bugm2151-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">CADDENCE Series Brushed Gun Metal Grey Shower Rail without Handheld Shower</span><span class="colour-code">Code: BUGM2151.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-rails" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch2128-sh-n.webp" style="background-image:url('images/shower-ch2128-sh-n-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Shower Rail</span><span class="colour-code">Code: CH2128.SH.N</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0002-sh.webp" style="background-image:url('images/shower-ch0002-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Super-slim Square Rainfall Shower Head 250mm</span><span class="colour-code">Code: CH0002.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0002-sh.webp" style="background-image:url('images/shower-ox0002-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Black Rainfall Shower Head 250mm</span><span class="colour-code">Code: OX0002.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0002-sh.webp" style="background-image:url('images/shower-bu0002-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Brushed Nickel Rainfall Shower Head 250mm</span><span class="colour-code">Code: BU0002.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0003-sh.webp" style="background-image:url('images/shower-ch0003-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Chrome Rainfall Shower Head 300mm</span><span class="colour-code">Code: CH0003.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0003-sh.webp" style="background-image:url('images/shower-ox0003-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Black Rainfall Shower Head 300mm</span><span class="colour-code">Code: OX0003.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0007-sh.webp" style="background-image:url('images/shower-ch0007-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Chrome Rainfall Shower Head 250mm</span><span class="colour-code">Code: CH0007.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0007-sh.webp" style="background-image:url('images/shower-ox0007-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Black Rainfall Shower Head 250mm</span><span class="colour-code">Code: OX0007.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0008-sh.webp" style="background-image:url('images/shower-ch0008-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Chrome Rainfall Shower Head 300mm</span><span class="colour-code">Code: CH0008.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0008-sh.webp" style="background-image:url('images/shower-ox0008-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Black Rainfall Shower Head 300mm</span><span class="colour-code">Code: OX0008.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0010-sh.webp" style="background-image:url('images/shower-ch0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Brass Shower Head 250mm (Brass)</span><span class="colour-code">Code: CH0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0010-sh.webp" style="background-image:url('images/shower-ox0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Brass Shower Head 250mm (Brass)</span><span class="colour-code">Code: OX0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0010-sh.webp" style="background-image:url('images/shower-buyg0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Shower Head 250mm(Brass)</span><span class="colour-code">Code: BUYG0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0010-sh.webp" style="background-image:url('images/shower-bu0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Brass Shower Head 250mm (Brass)</span><span class="colour-code">Code: BU0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0010-sh.webp" style="background-image:url('images/shower-gm0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Brass Shower Head 250mm (Brass)</span><span class="colour-code">Code: GM0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0100-sh.webp" style="background-image:url('images/shower-ch0100-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Chrome Rainfall Shower Head 200mm</span><span class="colour-code">Code: CH0100.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0100-sh.webp" style="background-image:url('images/shower-ox0100-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Square Black Rainfall Shower Head 200mm</span><span class="colour-code">Code: OX0100.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0102-sh.webp" style="background-image:url('images/shower-ch0102-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Rainfall Shower Head 200mm</span><span class="colour-code">Code: CH0102.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0102-sh.webp" style="background-image:url('images/shower-ox0102-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Matt Black Rainfall Shower Head 200mm</span><span class="colour-code">Code: OX0102.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0115-sh.webp" style="background-image:url('images/shower-ch0115-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome ABS Rainfall Shower Head 200mm</span><span class="colour-code">Code: CH0115.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0115-sh.webp" style="background-image:url('images/shower-ox0115-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black ABS Rainfall Shower Head 200mm</span><span class="colour-code">Code: OX0115.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0119-sh.webp" style="background-image:url('images/shower-ch0119-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Chrome Rainfall Shower Head 200mm</span><span class="colour-code">Code: CH0119.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0119-sh.webp" style="background-image:url('images/shower-ox0119-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Super-slim Round Black Rainfall Shower Head 200mm</span><span class="colour-code">Code: OX0119.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0134-sh.webp" style="background-image:url('images/shower-ch0134-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Rainfall Brass Shower Head 200mm</span><span class="colour-code">Code: CH0134.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0134-sh.webp" style="background-image:url('images/shower-ox0134-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Rainfall Brass Shower Head 200mm</span><span class="colour-code">Code: OX0134.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0135-sh.webp" style="background-image:url('images/shower-ch0135-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Rainfall Brass Shower Head 250mm</span><span class="colour-code">Code: CH0135.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0135-sh.webp" style="background-image:url('images/shower-ox0135-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Brass Rainfall Shower Head 250mm</span><span class="colour-code">Code: OX0135.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0135-sh.webp" style="background-image:url('images/shower-buyg0135-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Yellow Gold Brass Rainfall Shower Head 250mm</span><span class="colour-code">Code: BUYG0135.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0135-sh.webp" style="background-image:url('images/shower-bu0135-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Brass Rainfall Shower Head 250mm</span><span class="colour-code">Code: BU0135.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0135-sh.webp" style="background-image:url('images/shower-gm0135-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Brass Rainfall Shower Head 250mm</span><span class="colour-code">Code: GM0135.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0133-sh.webp" style="background-image:url('images/shower-ch0133-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Brass Rainfall Shower Head 300mm</span><span class="colour-code">Code: CH0133.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0133-sh.webp" style="background-image:url('images/shower-ox0133-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Brass Rainfall Shower Head 300mm</span><span class="colour-code">Code: OX0133.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg0010-sh.webp" style="background-image:url('images/shower-lbg0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">250mm Light Brushed Brass Shower Head</span><span class="colour-code">Code: LBG0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-heads" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bucp0010-sh.webp" style="background-image:url('images/shower-bucp0010-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">250mm Brushed Copper Shower Head</span><span class="colour-code">Code: BUCP0010.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-square-chrome-hand-held-shower-set.webp" style="background-image:url('images/shower-square-chrome-hand-held-shower-set-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Hand Held Shower Set</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-r4-hhs.webp" style="background-image:url('images/shower-ch-r4-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome 5 Function Round Handheld Shower</span><span class="colour-code">Code: CH-R4.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-r4-hhs.webp" style="background-image:url('images/shower-ox-r4-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Black 5 Function Round Handheld Shower</span><span class="colour-code">Code: OX-R4.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-s2-hhs.webp" style="background-image:url('images/shower-ch-s2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Square Handheld Shower</span><span class="colour-code">Code: CH-S2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-s2-hhs.webp" style="background-image:url('images/shower-ox-s2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Black Square Handheld Shower</span><span class="colour-code">Code: OX-S2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-r11-hhs.webp" style="background-image:url('images/shower-ch-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome ABS 3 Function Handheld Shower Only</span><span class="colour-code">Code: CH-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-r11-hhs.webp" style="background-image:url('images/shower-ox-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black ABS 3 Function Handheld Shower Only</span><span class="colour-code">Code: OX-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu-r11-hhs.webp" style="background-image:url('images/shower-bu-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel ABS 3 Function Handheld Shower</span><span class="colour-code">Code: BU-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm-r11-hhs.webp" style="background-image:url('images/shower-gm-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey ABS 3 Function Handheld Shower</span><span class="colour-code">Code: GM-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-s8-hhs.webp" style="background-image:url('images/shower-ch-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square 3 Functions Chrome Rainfall Handheld Shower Head</span><span class="colour-code">Code: CH-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-s8-hhs.webp" style="background-image:url('images/shower-ox-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square 3 Functions Black Rainfall Handheld Shower Head</span><span class="colour-code">Code: OX-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu-s8-hhs.webp" style="background-image:url('images/shower-bu-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square 3 Functions Brushed Nickel Rainfall Handheld Shower Head</span><span class="colour-code">Code: BU-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm-s8-hhs.webp" style="background-image:url('images/shower-gm-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">ABS Square Gunmetal Grey 3 Functions Rainfall Hand Held Shower Head</span><span class="colour-code">Code: GM-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-s5-hhs.webp" style="background-image:url('images/shower-ch-s5-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome Brass Square Handheld Shower Spray Head</span><span class="colour-code">Code: CH-S5.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-s5-hhs.webp" style="background-image:url('images/shower-ox-s5-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Matte Black Brass Square Handheld Shower Spray Head</span><span class="colour-code">Code: OX-S5.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu-s5-hhs.webp" style="background-image:url('images/shower-bu-s5-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Nickel Brass Square Handheld Shower Spray Head</span><span class="colour-code">Code: BU-S5.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm-s5-hhs.webp" style="background-image:url('images/shower-gm-s5-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Gun Metal Grey Brass Square Handheld Shower Spray Head</span><span class="colour-code">Code: GM-S5.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg-s5-hhs.webp" style="background-image:url('images/shower-buyg-s5-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Brass Square Handheld Shower Spray Head</span><span class="colour-code">Code: BUYG-S5.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch-r2-hhs.webp" style="background-image:url('images/shower-ch-r2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Single Function Chrome Brass Handheld Shower</span><span class="colour-code">Code: CH-R2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox-r2-hhs.webp" style="background-image:url('images/shower-ox-r2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Single Function Black Brass Handheld Shower</span><span class="colour-code">Code: OX-R2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg-r2-hhs.webp" style="background-image:url('images/shower-buyg-r2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Single Function Brushed Brass Handheld Shower (Brass)</span><span class="colour-code">Code: BUYG-R2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu-r2-hhs.webp" style="background-image:url('images/shower-bu-r2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Single Function Brushed Nickel Brass Handheld Shower</span><span class="colour-code">Code: BU-R2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm-r2-hhs.webp" style="background-image:url('images/shower-gm-r2-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Single Function Gun Metal Grey Brass Handheld Shower</span><span class="colour-code">Code: GM-R2.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg-r11-hhs.webp" style="background-image:url('images/shower-buyg-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Brass 3 Functions Handheld Shower</span><span class="colour-code">Code: BUYG-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg-s8-hhs.webp" style="background-image:url('images/shower-buyg-s8-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Brass 3 Functions Handheld Shower</span><span class="colour-code">Code: BUYG-S8.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bucp-r11-hhs.webp" style="background-image:url('images/shower-bucp-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round 3 Functions Brushed Copper ABS Handheld Shower</span><span class="colour-code">Code: BUCP-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="handheld-showers" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg-r11-hhs.webp" style="background-image:url('images/shower-lbg-r11-hhs-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round 3 Functions Light Brushed Brass ABS Handheld Shower</span><span class="colour-code">Code: LBG-R11.HHS</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0108-sa.webp" style="background-image:url('images/shower-ch0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Stainless Steel Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: CH0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0108-sa.webp" style="background-image:url('images/shower-ox0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Stainless Steel Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: OX0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0108-sa.webp" style="background-image:url('images/shower-bu0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Stainless Steel Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: BU0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0129-sa.webp" style="background-image:url('images/shower-ch0129-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Gooseneck Wall Shower Arm</span><span class="colour-code">Code: CH0129.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0129-sa.webp" style="background-image:url('images/shower-ox0129-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Gooseneck Wall Shower Arm</span><span class="colour-code">Code: OX0129.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0129-sa.webp" style="background-image:url('images/shower-gm0129-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Gooseneck Wall Shower Arm</span><span class="colour-code">Code: GM0129.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0128-sa.webp" style="background-image:url('images/shower-ch0128-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Swivel Wall Mounted Shower Arm</span><span class="colour-code">Code: CH0128.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0128-sa.webp" style="background-image:url('images/shower-ox0128-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Swivel Wall Mounted Shower Arm</span><span class="colour-code">Code: OX0128.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0105-sa.webp" style="background-image:url('images/shower-ox0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Ceiling Shower Arm 200mm</span><span class="colour-code">Code: OX0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0105-sa.webp" style="background-image:url('images/shower-ch0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Ceiling Shower Arm 200mm</span><span class="colour-code">Code: CH0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0125-sa.webp" style="background-image:url('images/shower-ox0125-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Black Ceiling Shower Arm 300mm</span><span class="colour-code">Code: OX0125.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0125-sa.webp" style="background-image:url('images/shower-ch0125-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Ceiling Shower Arm 300mm</span><span class="colour-code">Code: CH0125.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0120-sa.webp" style="background-image:url('images/shower-ch0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Chrome Ceiling Shower Arm 400mm</span><span class="colour-code">Code: CH0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0120-sa.webp" style="background-image:url('images/shower-ox0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Matte Black Ceiling Shower Arm 400mm</span><span class="colour-code">Code: OX0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0104-sa.webp" style="background-image:url('images/shower-ch0104-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Brass Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: CH0104.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0104-sa.webp" style="background-image:url('images/shower-ox0104-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: OX0104.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0103-sa.webp" style="background-image:url('images/shower-ch0103-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Ceiling Shower Arm 200mm</span><span class="colour-code">Code: CH0103.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0103-sa.webp" style="background-image:url('images/shower-ox0103-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Ceiling Shower Arm 200mm</span><span class="colour-code">Code: OX0103.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0103-sa.webp" style="background-image:url('images/shower-bu0103-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Ceiling Shower Arm 200mm</span><span class="colour-code">Code: BU0103.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0126-sa.webp" style="background-image:url('images/shower-ch0126-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Ceiling Shower Arm 300mm</span><span class="colour-code">Code: CH0126.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0126-sa.webp" style="background-image:url('images/shower-ox0126-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Ceiling Shower Arm 300mm</span><span class="colour-code">Code: OX0126.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0126-sa.webp" style="background-image:url('images/shower-bu0126-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Ceiling Shower Arm 300mm</span><span class="colour-code">Code: BU0126.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0126-sa.webp" style="background-image:url('images/shower-gm0126-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Ceiling Shower Arm 300mm</span><span class="colour-code">Code: GM0126.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-square-chrome-ceiling-shower-arm-400mm.webp" style="background-image:url('images/shower-square-chrome-ceiling-shower-arm-400mm-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Ceiling Shower Arm 400mm</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0117-sa.webp" style="background-image:url('images/shower-ox0117-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Ceiling Shower Arm 400mm</span><span class="colour-code">Code: OX0117.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0117-sa.webp" style="background-image:url('images/shower-bu0117-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Ceiling Shower Arm 400mm</span><span class="colour-code">Code: BU0117.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch0106-sa.webp" style="background-image:url('images/shower-ch0106-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Chrome Ceiling Shower Arm 600mm</span><span class="colour-code">Code: CH0106.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox0106-sa.webp" style="background-image:url('images/shower-ox0106-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Black Ceiling Shower Arm 600mm</span><span class="colour-code">Code: OX0106.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0106-sa.webp" style="background-image:url('images/shower-bu0106-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Nickel Ceiling Shower Arm 600mm</span><span class="colour-code">Code: BU0106.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0106-sa.webp" style="background-image:url('images/shower-gm0106-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Ceiling Shower Arm 600mm</span><span class="colour-code">Code: GM0106.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0117-sa.webp" style="background-image:url('images/shower-gm0117-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Gun Metal Grey Ceiling Shower Arm 400mm</span><span class="colour-code">Code: GM0117.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0120-sa.webp" style="background-image:url('images/shower-buyg0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Ceiling Shower Arm 400mm</span><span class="colour-code">Code: BUYG0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0120-sa.webp" style="background-image:url('images/shower-gm0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Ceiling Shower Arm 400mm</span><span class="colour-code">Code: GM0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0127-sa.webp" style="background-image:url('images/shower-gm0127-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Goose-neck Wall Mounted Shower Arm</span><span class="colour-code">Code: GM0127.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0120-sa.webp" style="background-image:url('images/shower-bu0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Finished Ceiling Shower Arm 400mm</span><span class="colour-code">Code: BU0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0105-sa.webp" style="background-image:url('images/shower-buyg0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Ceiling Shower Arm 200mm</span><span class="colour-code">Code: BUYG0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0105-sa.webp" style="background-image:url('images/shower-bu0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Ceiling Shower Arm 200mm</span><span class="colour-code">Code: BU0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0105-sa.webp" style="background-image:url('images/shower-gm0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Ceiling Shower Arm 200mm</span><span class="colour-code">Code: GM0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0108-sa.webp" style="background-image:url('images/shower-buyg0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Stainless Steel Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: BUYG0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-gm0108-sa.webp" style="background-image:url('images/shower-gm0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Gun Metal Grey Stainless Steel Wall Mounted Shower Arm 400mm</span><span class="colour-code">Code: GM0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0126-sa.webp" style="background-image:url('images/shower-buyg0126-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Square Brushed Brass Ceiling Shower Arm 300mm</span><span class="colour-code">Code: BUYG0126.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0127-sa.webp" style="background-image:url('images/shower-buyg0127-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Brass Goose-neck Wall Mounted Shower Arm</span><span class="colour-code">Code: BUYG0127.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bu0127-sa.webp" style="background-image:url('images/shower-bu0127-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Round Brushed Nickel Goose-neck Wall Mounted Shower Arm</span><span class="colour-code">Code: BU0127.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg0120-sa.webp" style="background-image:url('images/shower-lbg0120-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">400mm Light Brushed Brass Ceiling Shower Arm</span><span class="colour-code">Code: LBG0120.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg0105-sa.webp" style="background-image:url('images/shower-lbg0105-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">200mm Light Brushed Brass Ceiling Shower Arm</span><span class="colour-code">Code: LBG0105.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-lbg0108-sa.webp" style="background-image:url('images/shower-lbg0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">400mm Light Brushed Brass Wall Shower Arm</span><span class="colour-code">Code: LBG0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-bucp0108-sa.webp" style="background-image:url('images/shower-bucp0108-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">400mm Brushed Copper Wall Shower Arm</span><span class="colour-code">Code: BUCP0108.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-arms" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-buyg0129-sa.webp" style="background-image:url('images/shower-buyg0129-sa-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Brass Wall Shower Arm</span><span class="colour-code">Code: BUYG0129.SA</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-sh150.webp" style="background-image:url('images/shower-sh150-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Flexible Shower Hose Chrome 1500mm</span><span class="colour-code">Code: SH150</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-sh150-b.webp" style="background-image:url('images/shower-sh150-b-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">1500mm Black Flexible Shower Hose Stainless Steel</span><span class="colour-code">Code: SH150-B</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-sh150bu.webp" style="background-image:url('images/shower-sh150bu-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Flexible Shower Hose Brushed Nickel 1500mm</span><span class="colour-code">Code: SH150BU</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-sh150gm.webp" style="background-image:url('images/shower-sh150gm-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Flexible Shower Hose Gun Metal Grey 1500mm</span><span class="colour-code">Code: SH150GM</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ch1500-2125-sh.webp" style="background-image:url('images/shower-ch1500-2125-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">1500mm Chrome Stainless Steel Water Inlet/Outlet Shower Hose</span><span class="colour-code">Code: CH1500-2125.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-ox1500-2125-sh.webp" style="background-image:url('images/shower-ox1500-2125-sh-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">1500mm Black Stainless Steel Water Inlet/Outlet Shower Hose</span><span class="colour-code">Code: OX1500-2125.SH</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-pvc.webp" style="background-image:url('images/shower-pvc-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Chrome PVC Shower Hose 1500mm</span><span class="colour-code">Code: PVC</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-black-pvc-shower-hose-1500mm.webp" style="background-image:url('images/shower-black-pvc-shower-hose-1500mm-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Black PVC Shower Hose 1500mm</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-pvcbu.webp" style="background-image:url('images/shower-pvcbu-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Brushed Nickel PVC Shower Hose 1500mm</span><span class="colour-code">Code: PVCBU</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-pvcgm.webp" style="background-image:url('images/shower-pvcgm-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Gun Metal Grey PVC Shower Hose 1500mm</span><span class="colour-code">Code: PVCGM</span></figcaption></figure>
+        <figure class="colour-swatch" data-category="shower-hoses" data-label="Showers"><div class="colour-img is-fit" data-full="images/shower-sh150-buyg.webp" style="background-image:url('images/shower-sh150-buyg-thumb.webp');--fit-bg:#FFFFFF"></div><figcaption><span class="swatch-name">Flexible Shower Hose Brushed Yellow Gold 1500mm</span><span class="colour-code">Code: SH150-BUYG</span></figcaption></figure>
+      </div>
+      <p class="text-muted" style="margin-top:3rem;font-size:.9rem" data-reveal="up">Click any photo to open it full size. Use the arrow keys to move through the range.</p>
+    </div>
+  </section>
+
+</main>
+
+  <section class="cta-band section">
+    <div class="cta-band-media" aria-hidden="true">
+      <img src="images/cta-bathroom.webp" alt="" width="1448" height="1086" loading="lazy" decoding="async">
+    </div>
+    <div class="container">
+      <div class="cta-inner">
+        <div data-reveal="up">
+          <span class="eyebrow">Free quote</span>
+          <h2>Request a free <em>quote today.</em></h2>
+          <p>Speak with our experienced team about your next project.</p>
+          <p class="cta-action"><a class="btn btn-brass" href="quote.html">Contact us <span class="btn-arrow" aria-hidden="true">&rarr;</span></a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container container-wide">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="images/multi-logo-footer.webp" alt="Multistock Building Resources Pty Ltd" width="1000" height="328" loading="lazy">
+          </a>
+          <p class="footer-blurb">Australia's complete building and renovation supply centre. Wholesale and retail flooring, bathrooms, kitchens, tiles and tapware.</p>
+          <div class="footer-social">
+            <a class="soc soc-fb" href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Multistock on Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
+            <a class="soc soc-ig" href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Multistock on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="igGrad" x1="10%" y1="100%" x2="90%" y2="0%"><stop offset="0%" stop-color="#FFD521"/><stop offset="26%" stop-color="#F50000"/><stop offset="62%" stop-color="#B900B4"/><stop offset="100%" stop-color="#4C68D7"/></linearGradient></defs><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="products.html">All products</a></li>
+            <li><a href="flooring.html">Flooring</a></li>
+            <li><a href="bathrooms.html">Bathroom Ware &amp; Kitchen Ware</a></li>
+            <li><a href="carpet.html">Carpet</a></li>
+            <li><a href="tiles.html">Tiles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="quote.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Bathroom &amp; kitchen</h4>
+          <ul>
+            <li><a href="showers.html">Showers</a></li>
+            <li><a href="toilets.html">Toilets</a></li>
+            <li><a href="baths.html">Baths</a></li>
+            <li><a href="tapware.html">Tapware</a></li>
+            <li><a href="vanity.html">Vanity</a></li>
+            <li><a href="kitchen-sinks.html">Kitchen Sinks</a></li>
+            <li><a href="bathroom-sinks.html">Basins</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="shaving-cabinets.html">Shaving Cabinets</a></li>
+            <li><a href="carysil-tapware.html">Carysil Tapware</a></li>
+            <li><a href="appliances.html">Appliances</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col footer-contact">
+          <h4>Get in touch</h4>
+          <ul>
+            <li><a href="tel:0422968688"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><span>0422 968 688</span></a></li>
+            <li><a href="mailto:sales@multistock.com.au"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 7l8.5 6 8.5-6"/></svg></span><span>sales@multistock.com.au</span></a></li>
+            <li><a href="https://www.google.com/maps/search/?api=1&amp;query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener"><span class="fc-ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span><span>2/25 Grant Road<br>Somerville Vic 3912</span></a></li>
+          </ul>
+          <div class="footer-hours">
+            <strong>Opening hours</strong>
+            <dl>
+              <div><dt>Mon &ndash; Thu</dt><dd>8:30am &ndash; 5:30pm</dd></div>
+              <div><dt>Fri</dt><dd>8:30am &ndash; 4:30pm</dd></div>
+              <div class="is-closed"><dt>Sat &ndash; Sun</dt><dd>Closed</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span data-year>2026</span> Multistock Building Resources Pty Ltd
+          <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
+        </span>
+        <span>Wholesale &amp; retail &mdash; trade accounts available, public welcome</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button type="button" class="lightbox-btn lightbox-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5L5 19" stroke-linecap="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-prev" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 4L7 12l8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button type="button" class="lightbox-btn lightbox-next" aria-label="Next image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4l8 8-8 8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img alt="" decoding="async">
+      <figcaption class="lightbox-meta">
+        <span><em></em><br><strong></strong></span>
+        <span class="lightbox-counter"></span>
+      </figcaption>
+      <div class="lightbox-strip" role="tablist" aria-label="Choose an image"></div>
+    </figure>
   </div>
 
-  <!-- Range -->
-  <section class="feature-boxes">
-    <h2 class="colours-title">OUR RANGE</h2>
-    <div class="colour-grid">
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-square-chrome.webp" style="background-image:url('images/shower-square-chrome-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Square Chrome Shower Station Top Water Inlet</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-square-black.webp" style="background-image:url('images/shower-square-black-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Square Black Shower Station Top Water Inlet</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-square-nickel.webp" style="background-image:url('images/shower-square-nickel-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Square Brushed Nickel Shower Station Top Water Inlet</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-round-nickel.webp" style="background-image:url('images/shower-round-nickel-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Round Brushed Nickel Shower Station Top Water Inlet (Right Angle)</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-round-chrome-2.webp" style="background-image:url('images/shower-round-chrome-2-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Chrome Shower Station</figcaption></figure>
-      <figure class="colour-swatch"><div class="colour-img" data-full="images/shower-round-black-2.webp" style="background-image:url('images/shower-round-black-2-thumb.webp');background-size:contain;background-color:#fff"></div><figcaption>10&quot; Round Black Shower Station Top Inlet</figcaption></figure>
-    </div>
-  </section>
+  <button type="button" class="to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="colour-lightbox">
-    <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close zoomed view">&times;</button>
-    <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous">‹</button>
-    <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next">›</button>
-    <img id="lightbox-img" src="" alt="Shower — zoomed view">
+  <div class="mobile-cta">
+    <a class="btn btn-brass" href="tel:0422968688">Call us</a>
+    <a class="btn btn-light" href="quote.html">Contact us</a>
   </div>
 
-  <!-- Quote banner -->
-  <section class="quote-banner">
-    <div class="quote-left">
-      <img src="images/multi-logo-web.png" class="quote-icon-img" alt="Multistock Building Resources Pty Ltd">
-      <div>
-        <h3>REQUEST A FREE QUOTE TODAY</h3>
-        <p>Speak with our experienced team about your next project.</p>
-      </div>
-    </div>
-    <a href="quote.html" class="btn btn-quote">REQUEST A QUOTE ›</a>
-  </section>
-
-  <!-- Info row -->
-  <section class="info-row">
-    <div class="footer-cols">
-      <div class="footer-contact-col">
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M12 2.25c-3.87 0-7 3.02-7 6.75 0 4.94 6.02 11.53 6.28 11.81a.98.98 0 0 0 1.44 0C13.98 20.53 20 13.94 20 9c0-3.73-3.13-6.75-7-6.75Z" fill="#e2574c"/>
-            <circle cx="12" cy="9" r="2.55" fill="#4d4d4d"/>
-          </svg>
-          <div>
-            <h4>VISIT OUR SHOWROOM</h4>
-            <p><a href="https://www.google.com/maps/search/?api=1&query=2%2F25%20Grant%20Road%2C%20Somerville%20VIC%203912" target="_blank" rel="noopener">2/25 Grant Road, Somerville Vic 3912</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#3d87cc"/>
-            <g fill="none" stroke="#333333" stroke-width="1.3">
-              <line x1="12" y1="2.7" x2="12" y2="21.3"/>
-              <ellipse cx="12" cy="12" rx="4.5" ry="9.3"/>
-              <line x1="2.7" y1="12" x2="21.3" y2="12"/>
-              <line x1="4.4" y1="7.4" x2="19.6" y2="7.4"/>
-              <line x1="4.4" y1="16.6" x2="19.6" y2="16.6"/>
-            </g>
-          </svg>
-          <div>
-            <h4>WHOLESALE &amp; RETAIL</h4>
-            <p>Trade accounts available. Public welcome</p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <path d="M6.4 3.5H9c.5 0 .9.35 1 .84l.86 4.02c.08.4-.05.8-.34 1.07l-1.7 1.6a13.6 13.6 0 0 0 5.15 5.15l1.6-1.7c.27-.29.68-.42 1.07-.34l4.02.86c.49.11.84.5.84 1V19c0 .83-.67 1.5-1.5 1.5C10.9 20.5 3.5 13.1 3.5 5A1.5 1.5 0 0 1 5 3.5Z" fill="#3fa35a"/>
-          </svg>
-          <div>
-            <h4>CALL US</h4>
-            <p><a href="tel:0422968688">0422 968 688</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="2.5" y="5" width="19" height="14" rx="2.6" fill="#ffffff"/>
-            <path d="M3.6 7.3 12 12.9 20.4 7.3" fill="none" stroke="#333333" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>EMAIL US</h4>
-            <p><a href="mailto:sales@multistock.com.au">sales@multistock.com.au</a></p>
-          </div>
-        </div>
-        <div class="info-item">
-          <svg class="info-icon-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <circle cx="12" cy="12" r="9.3" fill="#7a6fce"/>
-            <path d="M12 6.6V12l3.7 2.2" fill="none" stroke="#333333" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <div>
-            <h4>OPENING HOURS</h4>
-            <p>Mon - Thu: 8:30am - 5:30pm<br>Fri: 8:30am - 4:30pm<br>Sat - Sun: Closed</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-social">
-      <a href="https://www.facebook.com/multistockbuildingsupplies/" target="_blank" rel="noopener" aria-label="Facebook">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.77-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg>
-      </a>
-      <a href="https://www.instagram.com/multistockbuilding" target="_blank" rel="noopener" aria-label="Instagram">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.7 3.7 0 0 1-1.38-.9 3.7 3.7 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16zm0 1.62c-3.15 0-3.52.01-4.76.07-.9.04-1.39.19-1.71.32-.43.17-.74.37-1.06.69-.32.32-.52.63-.69 1.06-.13.32-.28.81-.32 1.71-.06 1.24-.07 1.61-.07 4.76s.01 3.52.07 4.76c.04.9.19 1.39.32 1.71.17.43.37.74.69 1.06.32.32.63.52 1.06.69.32.13.81.28 1.71.32 1.24.06 1.61.07 4.76.07s3.52-.01 4.76-.07c.9-.04 1.39-.19 1.71-.32.43-.17.74-.37 1.06-.69.32-.32.52-.63.69-1.06.13-.32.28-.81.32-1.71.06-1.24.07-1.61.07-4.76s-.01-3.52-.07-4.76c-.04-.9-.19-1.39-.32-1.71a2.9 2.9 0 0 0-.69-1.06 2.9 2.9 0 0 0-1.06-.69c-.32-.13-.81-.28-1.71-.32-1.24-.06-1.61-.07-4.76-.07zm0 2.76a5.46 5.46 0 1 1 0 10.92 5.46 5.46 0 0 1 0-10.92zm0 9a3.54 3.54 0 1 0 0-7.08 3.54 3.54 0 0 0 0 7.08zm5.68-9.15a1.28 1.28 0 1 1-2.55 0 1.28 1.28 0 0 1 2.55 0z"/></svg>
-      </a>
-    </div>
-    <div class="footer-bottom">
-      © 2026 Multistock Building Resources Pty Ltd
-      <span class="footer-credit">Designed &amp; developed by Tyrones Digital</span>
-    </div>
-  </section>
-
-<script>
-  var toggle = document.getElementById('nav-toggle');
-  var nav = document.getElementById('main-nav');
-  toggle.addEventListener('click', function () {
-    var isOpen = nav.classList.toggle('open');
-    toggle.classList.toggle('open', isOpen);
-    toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-  });
-  nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  var colourLightbox = document.getElementById('colour-lightbox');
-  var lightboxImg = document.getElementById('lightbox-img');
-  var lightboxClose = document.getElementById('lightbox-close');
-  var lightboxPrev = document.getElementById('lightbox-prev');
-  var lightboxNext = document.getElementById('lightbox-next');
-  var colourFulls = [].map.call(document.querySelectorAll('.colour-img'), function (el) { return el.dataset.full; }).filter(Boolean);
-  var colourIndex = 0;
-  function showColour(i) {
-    if (!colourFulls.length) return;
-    colourIndex = (i + colourFulls.length) % colourFulls.length;
-    lightboxImg.src = colourFulls[colourIndex];
-  }
-  function closeColourLightbox() { colourLightbox.classList.remove('open'); }
-  document.querySelectorAll('.colour-img').forEach(function (swatch) {
-    swatch.addEventListener('click', function () {
-      var full = swatch.dataset.full;
-      if (!full) return;
-      colourIndex = colourFulls.indexOf(full);
-      lightboxImg.src = full;
-      colourLightbox.classList.add('open');
-    });
-  });
-  colourLightbox.addEventListener('click', closeColourLightbox);
-  lightboxClose.addEventListener('click', function (event) { event.stopPropagation(); closeColourLightbox(); });
-  lightboxPrev.addEventListener('click', function (event) { event.stopPropagation(); showColour(colourIndex - 1); });
-  lightboxNext.addEventListener('click', function (event) { event.stopPropagation(); showColour(colourIndex + 1); });
-  document.addEventListener('keydown', function (event) {
-    if (!colourLightbox.classList.contains('open')) return;
-    if (event.key === 'Escape') closeColourLightbox();
-    else if (event.key === 'ArrowLeft') showColour(colourIndex - 1);
-    else if (event.key === 'ArrowRight') showColour(colourIndex + 1);
-  });
-</script>
+<script src="js/motion.min.js"></script>
+<script src="js/site.js?v=665"></script>
+<script src="js/fx.js?v=665"></script>
 </body>
 </html>

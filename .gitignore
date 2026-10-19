@@ -1,0 +1,9 @@
+_old-site/
+about-options.html
+_redesign-backup/
+cinematic/source/node_modules/
+.playwright-cli/
+.DS_Store
+client-product-sheets/
+preview/
+__td-logo-anim-test.html
